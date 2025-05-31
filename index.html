@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Backyard Rabbitry Guide - SA</title>
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
-    <link rel="stylesheet" as="style" onload="this.rel='stylesheet'" href="https://fonts.googleapis.com/css2?display=swap&family=Epilogue%3Awght%40400%3B500%3B700%3B900&family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?display=swap&family=Epilogue:wght@400;500;700;900&family=Noto+Sans:wght@400;500;700;900" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -20,8 +20,6 @@
             --border-color: #f4f0e6;
             --text-on-accent: #1c180d;
             --text-white: #ffffff;
-            --header-height: auto;
-            --tabs-height: 50px;
         }
 
         body {
@@ -60,10 +58,7 @@
             gap: 1rem;
         }
 
-        .header-logo-icon {
-            width: 1rem;
-            height: 1rem;
-        }
+        .header-logo-icon { width: 1rem; height: 1rem; }
 
         .header-title {
             font-size: 1.125rem;
@@ -74,33 +69,6 @@
         }
 
         .header-actions-group {
-            display: flex;
-            flex: 1;
-            justify-content: flex-end;
-            align-items: center;
-            gap: 2rem;
-        }
-
-        .header-nav-links {
-            display: none;
-            align-items: center;
-            gap: 2.25rem;
-        }
-
-        .header-nav-links a {
-            font-size: 0.875rem;
-            font-weight: 500;
-            line-height: 1.5;
-            color: var(--text-dark);
-            text-decoration: none;
-            transition: color 0.2s ease;
-        }
-
-        .header-nav-links a:hover {
-            color: var(--accent-primary);
-        }
-
-        .header-icon-buttons {
             display: flex;
             align-items: center;
             gap: 0.5rem;
@@ -120,23 +88,17 @@
             padding: 0.625rem;
         }
 
-        .header-icon-btn:hover {
-            background-color: #e0dacf;
-        }
+        .header-icon-btn:hover { background-color: #e0dacf; }
 
-        .header-icon-btn svg {
-            width: 20px;
-            height: 20px;
-        }
+        .header-icon-btn svg { width: 20px; height: 20px; }
 
-        .header-profile-img {
-            width: 2.5rem;
-            height: 2.5rem;
-            border-radius: 9999px;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
+        #google_translate_element select {
+            background-color: var(--accent-secondary);
             border: 1px solid var(--border-color);
+            border-radius: 0.5rem;
+            padding: 0.5rem;
+            font-size: 0.875rem;
+            color: var(--text-dark);
         }
 
         .spa-nav-tabs {
@@ -146,13 +108,10 @@
             background-color: var(--bg-main);
             padding: 0.25rem 1rem;
             border-top: 1px solid var(--border-color);
-            -webkit-overflow-scrolling: touch;
             scrollbar-width: none;
         }
 
-        .spa-nav-tabs::-webkit-scrollbar {
-            display: none;
-        }
+        .spa-nav-tabs::-webkit-scrollbar { display: none; }
 
         .spa-tab-button {
             padding: 0.6rem 1rem;
@@ -172,9 +131,7 @@
             border-bottom-color: var(--accent-primary);
         }
 
-        .spa-tab-button:hover:not(.active) {
-            color: var(--text-dark);
-        }
+        .spa-tab-button:hover:not(.active) { color: var(--text-dark); }
 
         .main-content-wrapper {
             flex-grow: 1;
@@ -207,11 +164,7 @@
             background-color: var(--bg-main);
         }
 
-        @media (min-width: 640px) {
-            .content-section {
-                padding: 1.5rem 2.5rem;
-            }
-        }
+        @media (min-width: 640px) { .content-section { padding: 1.5rem 2.5rem; } }
 
         .content-section::-webkit-scrollbar {
             width: 8px;
@@ -230,11 +183,7 @@
             color: var(--text-white);
         }
 
-        @media (min-width: 640px) {
-            h1 {
-                font-size: 3rem;
-            }
-        }
+        @media (min-width: 640px) { h1 { font-size: 3rem; } }
 
         h2 {
             font-size: 1.375rem;
@@ -258,13 +207,8 @@
             color: var(--text-dark);
         }
 
-        .text-muted {
-            color: var(--text-muted);
-        }
-
-        .text-sm {
-            font-size: 0.875rem;
-        }
+        .text-muted { color: var(--text-muted); }
+        .text-sm { font-size: 0.875rem; }
 
         .hero-section-card {
             display: flex;
@@ -281,11 +225,7 @@
             color: var(--text-white);
         }
 
-        @media (min-width: 640px) {
-            .hero-section-card {
-                gap: 2rem;
-            }
-        }
+        @media (min-width: 640px) { .hero-section-card { gap: 2rem; } }
 
         .hero-text-content {
             display: flex;
@@ -298,11 +238,7 @@
             font-size: 0.875rem;
         }
 
-        @media (min-width: 640px) {
-            .hero-section-card p {
-                font-size: 1rem;
-            }
-        }
+        @media (min-width: 640px) { .hero-section-card p { font-size: 1rem; } }
 
         .content-card {
             border-radius: 0.75rem;
@@ -354,7 +290,6 @@
             cursor: pointer;
             align-items: center;
             justify-content: center;
-            overflow: hidden;
             border-radius: 0.75rem;
             height: 2.5rem;
             padding: 0 1rem;
@@ -366,11 +301,7 @@
         }
 
         @media (min-width: 640px) {
-            .btn {
-                height: 3rem;
-                padding: 0 1.25rem;
-                font-size: 1rem;
-            }
+            .btn { height: 3rem; padding: 0 1.25rem; font-size: 1rem; }
         }
 
         .btn-primary {
@@ -474,13 +405,9 @@
             transition: background-color 0.2s ease;
         }
 
-        .carousel-nav-button:hover {
-            background-color: #e0dacf;
-        }
+        .carousel-nav-button:hover { background-color: #e0dacf; }
 
-        .quiz-category-selector button {
-            margin: 0.3rem;
-        }
+        .quiz-category-selector button { margin: 0.3rem; }
 
         #quizArea {
             background-color: #FFFFFF;
@@ -502,9 +429,7 @@
             transition: background-color 0.2s ease, border-color 0.2s ease;
         }
 
-        .quiz-option:hover {
-            background-color: var(--accent-secondary);
-        }
+        .quiz-option:hover { background-color: var(--accent-secondary); }
 
         .quiz-option.selected {
             border-color: var(--accent-primary);
@@ -531,9 +456,7 @@
             object-fit: cover;
         }
 
-        .recipe-card-content {
-            padding: 1rem;
-        }
+        .recipe-card-content { padding: 1rem; }
 
         .recipe-card-content h4 {
             font-size: 1.1rem;
@@ -560,11 +483,7 @@
             box-shadow: 0 4px 12px rgba(28, 24, 13, 0.05);
         }
 
-        @media (min-width: 768px) {
-            .chart-container {
-                height: 280px;
-            }
-        }
+        @media (min-width: 768px) { .chart-container { height: 280px; } }
 
         .expand-button {
             background-color: var(--accent-secondary);
@@ -581,9 +500,7 @@
             text-align: left;
         }
 
-        .expand-button:hover {
-            background-color: #e0dacf;
-        }
+        .expand-button:hover { background-color: #e0dacf; }
 
         .expandable-content {
             display: none;
@@ -593,6 +510,16 @@
             border-radius: 0.5rem;
             border: 1px solid var(--border-color);
         }
+
+        .learn-fact-container {
+            display: none;
+            padding: 1rem;
+            background-color: #fff;
+            border-radius: 0.5rem;
+            border: 1px solid var(--border-color);
+        }
+
+        .learn-fact-container.active { display: block; }
 
         .footer {
             padding: 2rem 1rem;
@@ -609,60 +536,20 @@
         }
 
         @media (max-width: 768px) {
-            .header-primary-content {
-                padding: 0.75rem 1rem;
-                gap: 0.5rem;
-            }
-
-            .header-logo-group {
-                gap: 0.5rem;
-            }
-
-            .header-title {
-                font-size: 1rem;
-            }
-
-            .header-actions-group {
-                gap: 0.5rem;
-            }
-
-            .header-icon-btn {
-                height: 2.25rem;
-                width: 2.25rem;
-                padding: 0.5rem;
-            }
-
-            .header-profile-img {
-                width: 2.25rem;
-                height: 2.25rem;
-            }
-
-            .spa-nav-tabs {
-                padding: 0.25rem 0.5rem;
-            }
-
-            .spa-tab-button {
-                padding: 0.5rem 0.75rem;
-                font-size: 0.8rem;
-            }
-
-            h2 {
-                font-size: 1.25rem;
-            }
-
-            .content-section {
-                padding: 1rem;
-            }
+            .header-primary-content { padding: 0.75rem 1rem; gap: 0.5rem; }
+            .header-logo-group { gap: 0.5rem; }
+            .header-title { font-size: 1rem; }
+            .header-actions-group { gap: 0.5rem; }
+            .header-icon-btn { height: 2.25rem; width: 2.25rem; padding: 0.5rem; }
+            .spa-nav-tabs { padding: 0.25rem 0.5rem; }
+            .spa-tab-button { padding: 0.5rem 0.75rem; font-size: 0.8rem; }
+            h2 { font-size: 1.25rem; }
+            .content-section { padding: 1rem; }
         }
 
         @media (max-width: 480px) {
-            .header-title {
-                display: none;
-            }
-
-            .content-section {
-                padding: 0.75rem;
-            }
+            .header-title { display: none; }
+            .content-section { padding: 0.75rem; }
         }
     </style>
 </head>
@@ -682,710 +569,856 @@
                     <h2 class="header-title">Backyard Rabbitry Guide</h2>
                 </div>
                 <div class="header-actions-group">
-                    <div class="header-icon-buttons">
-                        <button class="header-icon-btn" aria-label="Search">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256"><path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path></svg>
-                        </button>
-                        <button class="header-icon-btn" aria-label="User Profile">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256"><path d="M230.92,212c-15.23-26.33-38.7-45.21-66.09-54.16a72,72,0,1,0-73.66,0C63.78,166.78,40.31,185.66,25.08,212a8,8,0,1,0,13.85,8c18.84-32.56,52.14-52,89.07-52s70.23,19.44,89.07,52a8,8,0,1,0,13.85-8ZM72,96a56,56,0,1,1,56,56A56.06,56.06,0,0,1,72,96Z"></path></svg>
+    <button class="header-icon-btn" aria-label="Search">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256"><path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path></svg>
+    </button>
+    <div id="google_translate_element"></div>
+</div>
+</div>
+<div class="spa-nav-tabs">
+    <button class="spa-tab-button active" onclick="navigateToSection(0)"><i class="fas fa-rocket mr-1 sm:mr-2"></i>Start</button>
+    <button class="spa-tab-button" onclick="navigateToSection(1)"><i class="fas fa-balance-scale mr-1 sm:mr-2"></i>Legal</button>
+    <button class="spa-tab-button" onclick="navigateToSection(2)"><i class="fas fa-tools mr-1 sm:mr-2"></i>Setup</button>
+    <button class="spa-tab-button" onclick="navigateToSection(3)"><i class="fas fa-book-open mr-1 sm:mr-2"></i>Learn</button>
+    <button class="spa-tab-button" onclick="navigateToSection(4)"><i class="fas fa-coins mr-1 sm:mr-2"></i>Budget</button>
+    <button class="spa-tab-button" onclick="navigateToSection(5)"><i class="fas fa-heartbeat mr-1 sm:mr-2"></i>Care</button>
+    <button class="spa-tab-button" onclick="navigateToSection(6)"><i class="fas fa-utensils mr-1 sm:mr-2"></i>Harvest</button>
+    <button class="spa-tab-button" onclick="navigateToSection(7)"><i class="fas fa-calendar-alt mr-1 sm:mr-2"></i>Sim</button>
+    <button class="spa-tab-button" onclick="navigateToSection(8)"><i class="fas fa-puzzle-piece mr-1 sm:mr-2"></i>Quiz</button>
+    <button class="spa-tab-button" onclick="navigateToSection(9)"><i class="fas fa-drumstick-bite mr-1 sm:mr-2"></i>Recipes</button>
+    <button class="spa-tab-button" onclick="navigateToSection(10)"><i class="fas fa-seedling mr-1 sm:mr-2"></i>Sustainable Protein</button>
+    <button class="spa-tab-button" onclick="navigateToSection(11)"><i class="fas fa-link mr-1 sm:mr-2"></i>Links</button>
+</div>
+</header>
+<div class="main-content-wrapper">
+<div class="main-scroll-container-outer">
+    <div id="mainScrollContainer" class="main-scroll-container-inner">
+        <section id="gettingStarted" class="content-section">
+            <div class="@container">
+                <div class="@[480px]:p-4">
+                    <div class="hero-section-card" style='background-image: linear-gradient(rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.4) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuB05zttt6TBgOqv5KpGRgDumigYeHIssfcNFOiQwPnvARHEJ7JBz87lSp0-1sXq9wa9IbwKBkPfiGt_7_qFTLFn1iYZAH0lJ6eYVnpO8yGGSw5OhL9d2bXfTH3Q2AqOkJfR0gU39tfsMsEWHIRpxVIEwBS9urATvsiCUKl29iWa6AZgPBK0ajy93z5TzLCLZmqsWAop2e91jPSIPVa0Jeq-7g77lvnF9wWQsAfMkkntbUe1hWTivXb2dNxnhUmk6qvSiuanOvUlDslE");'>
+                        <div class="hero-text-content">
+                            <h1>Welcome to Your Backyard Rabbitry Adventure</h1>
+                            <p>Discover the joys of raising rabbits with our comprehensive guide tailored for South African rural communities.</p>
+                        </div>
+                        <button class="btn btn-primary" onclick="navigateToSection(2)">
+                            <span class="truncate">Start Learning</span>
                         </button>
                     </div>
-                    <div class="header-profile-img" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBNmaRCHxqAg_jg1-4slmhz_yxzjZvQ69ThC06g8PpKRPL5LqRsF0kfIPF6-fm2wsO-QE_ze8gCS7m-I7_dijEuhkISxHHdiK7PVb6VQcuBnkYmda9-84yg1Xd1_FF0N572gmWI-lGo5yiyyspaDuH8IGT7kZEBe_E6wjHBVlNCZJs9YHGw3eol9JjhmJ6OC-8HjnwRJkWEUjeumfki8hKGBOFOL-eAg2s3KfczqZnBWKLVCGC0q54V_P99GkquEdiMEG-_5AmSdtds");'></div>
                 </div>
             </div>
-            <div class="spa-nav-tabs">
-                <button class="spa-tab-button active" onclick="navigateToSection(0)"><i class="fas fa-rocket mr-1 sm:mr-2"></i>Start</button>
-                <button class="spa-tab-button" onclick="navigateToSection(1)"><i class="fas fa-balance-scale mr-1 sm:mr-2"></i>Legal</button>
-                <button class="spa-tab-button" onclick="navigateToSection(2)"><i class="fas fa-seedling mr-1 sm:mr-2"></i>Rural Youth EC</button>
-                <button class="spa-tab-button" onclick="navigateToSection(3)"><i class="fas fa-tools mr-1 sm:mr-2"></i>Setup</button>
-                <button class="spa-tab-button" onclick="navigateToSection(4)"><i class="fas fa-book-open mr-1 sm:mr-2"></i>Learn</button>
-                <button class="spa-tab-button" onclick="navigateToSection(5)"><i class="fas fa-coins mr-1 sm:mr-2"></i>Budget</button>
-                <button class="spa-tab-button" onclick="navigateToSection(6)"><i class="fas fa-heartbeat mr-1 sm:mr-2"></i>Care</button>
-                <button class="spa-tab-button" onclick="navigateToSection(7)"><i class="fas fa-utensils mr-1 sm:mr-2"></i>Harvest</button>
-                <button class="spa-tab-button" onclick="navigateToSection(8)"><i class="fas fa-calendar-alt mr-1 sm:mr-2"></i>Sim</button>
-                <button class="spa-tab-button" onclick="navigateToSection(9)"><i class="fas fa-puzzle-piece mr-1 sm:mr-2"></i>Quiz</button>
-                <button class="spa-tab-button" onclick="navigateToSection(10)"><i class="fas fa-drumstick-bite mr-1 sm:mr-2"></i>Recipes</button>
-                <button class="spa-tab-button" onclick="navigateToSection(11)"><i class="fas fa-link mr-1 sm:mr-2"></i>Links</button>
+            <h2>Why Start Your Rabbitry Journey?</h2>
+            <p class="text-base font-normal leading-normal pb-3 pt-1">This guide helps you understand the benefits of raising rabbits, ideal for beginners and families in rural South Africa. Let's hop to it! 🐇</p>
+            <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+                <div class="image-grid-card" onclick="toggleExpandable(this, 'joyOfRaising')">
+                    <div class="img-container" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCxxzrWUhc29lizGKpempAg2bdOYwXQeKdJNqDgKxAtcmFE028fP8rGG7UF4KqFyqIK7PHpIvKsKZ8yhTBHl0B6c0Y8rz3DKVUnlUwtngGtlI07RFQyj0Z2pebi4xal3Eu_-UNch5EFJZ47qxItEbhytTngIQ3miSv1ZMZrK2vQwPnzzbFm1UPHWYsjq6aNj14BndGcTJWKEH3yZ0dkizUOOWmSmVTFt-IqDR9z6R78vI-h3EkSUcuJaZ5h5KabghzzV5G1xs5Rw9ou");'></div>
+                    <div class="text-content">
+                        <p>The Joy of Raising Your Own Food</p>
+                        <p class="text-sm">Connect with your food source and teach responsibility.</p>
+                    </div>
+                    <div id="joyOfRaising" class="expandable-content">
+                        <p>Raising rabbits provides fresh, healthy meat and fosters family bonding. It teaches children responsibility and sustainability.</p>
+                        <ul class="list-disc pl-5">
+                            <li>Control over diet and quality.</li>
+                            <li>Educational for kids.</li>
+                            <li><a href="https://www.backyardchickens.com/articles/raising-rabbits-for-meat.74512/" target="_blank" class="text-blue-600 hover:underline">Learn More</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="image-grid-card" onclick="toggleExpandable(this, 'whyRabbits')">
+                    <div class="img-container" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC1OWvQTa8g4z2S7kcCzZCk5jxz82PZgcNy1wZdaxlI4ejd0mlOhIZPgZFsQN-nzA3FMLavE7ol7UvImI6bfD0xCHw7oy1OWgsGSPECQqlaJDxW47X1FrAkxA9ERBCavPud40DDt91Dxn3NzECQMlGUOZD3JU0_PqQsOihnuR1Q-Kkdh-qVBR8i61moFGCSf-CsQf2hPgcNNPRDlFgACc6pQPOH5iqtF121mffZ-0j3gRDO0gFlBpTPwooqsFCSfe6S-P1n4nDiwUU8");'></div>
+                    <div class="text-content">
+                        <p>Why Rabbits?</p>
+                        <p class="text-sm">Quiet, space-efficient, quick to reproduce.</p>
+                    </div>
+                    <div id="whyRabbits" class="expandable-content">
+                        <p>Rabbits are ideal for small spaces, requiring less land than cattle. They reproduce quickly, ensuring a steady food supply.</p>
+                        <ul class="list-disc pl-5">
+                            <li>Low startup costs.</li>
+                            <li>Fast growth cycle.</li>
+                            <li><a href="https://www.rspca.org.uk/adviceandwelfare/pets/rabbits" target="_blank" class="text-blue-600 hover:underline">Explore Rabbit Benefits</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-        </header>
-        <div class="main-content-wrapper">
-            <div class="main-scroll-container-outer">
-                <div id="mainScrollContainer" class="main-scroll-container-inner">
-                    <section id="gettingStarted" class="content-section">
-                        <div class="@container">
-                            <div class="@[480px]:p-4">
-                                <div class="hero-section-card" style='background-image: linear-gradient(rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.4) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuB05zttt6TBgOqv5KpGRgDumigYeHIssfcNFOiQwPnvARHEJ7JBz87lSp0-1sXq9wa9IbwKBkPfiGt_7_qFTLFn1iYZAH0lJ6eYVnpO8yGGSw5OhL9d2bXfTH3Q2AqOkJfR0gU39tfsMsEWHIRpxVIEwBS9urATvsiCUKl29iWa6AZgPBK0ajy93z5TzLCLZmqsWAop2e91jPSIPVa0Jeq-7g77lvnF9wWQsAfMkkntbUe1hWTivXb2dNxnhUmk6qvSiuanOvUlDslE");'>
-                                    <div class="hero-text-content">
-                                        <h1>Welcome to Your Backyard Rabbitry Adventure</h1>
-                                        <p>Discover the joys of raising rabbits with our comprehensive guide. Learn everything from basic care to advanced techniques, tailored for South African families.</p>
-                                    </div>
-                                    <button class="btn btn-primary" onclick="navigateToSection(3)">
-                                        <span class="truncate">Start Learning</span>
-                                    </button>
-                                </div>
+        </section>
+        <section id="legalLocal" class="content-section">
+            <h2>Legal Lowdown: Rabbit Farming Bylaws</h2>
+            <p class="text-base font-normal leading-normal pb-3 pt-1">Understand local regulations for rabbit farming. Select your province for guidance. <strong class="text-red-600 font-semibold">Verify with your municipality as bylaws change.</strong></p>
+            <div class="content-card">
+                <label for="provinceSelector" class="label-text">Select Your Province:</label>
+                <select id="provinceSelector" class="select-field" onchange="showProvinceBylaws()">
+                    <option value="">-- Select Province --</option>
+                    <option value="GP">Gauteng</option>
+                    <option value="WC">Western Cape</option>
+                    <option value="EC">Eastern Cape</option>
+                    <option value="KZN">KwaZulu-Natal</option>
+                    <option value="LP">Limpopo</option>
+                    <option value="MP">Mpumalanga</option>
+                    <option value="NW">North West</option>
+                    <option value="FS">Free State</option>
+                    <option value="NC">Northern Cape</option>
+                </select>
+            </div>
+            <div id="provinceBylawDetails" class="content-card" style="display: none;"></div>
+        </section>
+        <section id="setupBuild" class="content-section">
+            <h2>Building Your Rabbitry: Breeds to Hutches</h2>
+            <div class="content-card">
+                <p class="text-base font-medium leading-normal">Choosing Your Breeds</p>
+                <div class="carousel-container" id="breedCarousel">
+                    <div class="carousel-track">
+                        <div class="carousel-item">
+                            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxxzrWUhc29lizGKpempAg2bdOYwXQeKdJNqDgKxAtcmFE028fP8rGG7UF4KqFyqIK7PHpIvKsKZ8yhTBHl0B6c0Y8rz3DKVUnlUwtngGtlI07RFQyj0Z2pebi4xal3Eu_-UNch5EFJZ47qxItEbhytTngIQ3miSv1ZMZrK2vQwPnzzbFm1UPHWYsjq6aNj14BndGcTJWKEH3yZ0dkizUOOWmSmVTFt-IqDR9z6R78vI-h3EkSUcuJaZ5h5KabghzzV5G1xs5Rw9ou" alt="New Zealand White">
+                            <div class="carousel-caption">
+                                <h4>🐑 New Zealand White</h4>
+                                <p>Excellent meat production, good mothers.</p>
                             </div>
                         </div>
-                        <h2>Why Start Your Rabbitry Journey?</h2>
-                        <p class="text-base font-normal leading-normal pb-3 pt-1">This guide helps you understand the wonderful benefits of raising rabbits for your family, why they're a great choice for beginners, and how to get everyone in the family excited and involved. Let's hop to it! 🐇</p>
-                        <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
-                            <div class="image-grid-card">
-                                <div class="img-container" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCxxzrWUhc29lizGKpempAg2bdOYwXQeKdJNqDgKxAtcmFE028fP8rGG7UF4KqFyqIK7PHpIvKsKZ8yhTBHl0B6c0Y8rz3DKVUnlUwtngGtlI07RFQyj0Z2pebi4xal3Eu_-UNch5EFJZ47qxItEbhytTngIQ3miSv1ZMZrK2vQwPnzzbFm1UPHWYsjq6aNj14BndGcTJWKEH3yZ0dkizUOOWmSmVTFt-IqDR9z6R78vI-h3EkSUcuJaZ5h5KabghzzV5G1xs5Rw9ou");'></div>
+                        <div class="carousel-item">
+                            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1OWvQTa8g4z2S7kcCzZCk5jxz82PZgcNy1wZdaxlI4ejd0mlOhIZPgZFsQN-nzA3FMLavE7ol7UvImI6bfD0xCHw7oy1OWgsGSPECQqlaJDxW47X1FrAkxA9ERBCavPud40DDt91Dxn3NzECQMlGUOZD3JU0_PqQsOihnuR1Q-Kkdh-qVBR8i61moFGCSf-CsQf2hPgcNNPRDlFgACc6pQPOH5iqtF121mffZ-0j3gRDO0gFlBpTPwooqsFCSfe6S-P1n4nDiwUU8" alt="Californian">
+                            <div class="carousel-caption">
+                                <h4>🐇 Californian</h4>
+                                <p>Good meat-to-bone ratio, hardy.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJDXLEWS5WN3TbZ4MUwKPOO4CIFepQmI4S5VHGO1_UM480z5zZPc47iSCr2DTigx_mfPzQIU2td_M4ild-5is3eRzJg53SC4Kqq7F0MUjGe_wrM586bXXG0VcH57TcxUzp8-lz9TU1FJw36bb7-mB1uSLMcFJnReUY50JJH09WWq8_6AsinvyWblhtwpHM_VU6LhAJNI4AjtWuaVK24ytDRGl5eRZ1jMgSCO993ml0uMZ8nl0whhSEfnEyWRjLCWN1UclghI-iSrQS" alt="SA Phendula">
+                            <div class="carousel-caption">
+                                <h4>🇿🇦 SA Phendula</h4>
+                                <p>Locally adapted for SA conditions.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-nav">
+                    <button class="carousel-nav-button prev" onclick="moveCarousel('breedCarousel', -1)">❮</button>
+                    <button class="carousel-nav-button next" onclick="moveCarousel('breedCarousel', 1)">❯</button>
+                </div>
+            </div>
+            <h3>Housing Your Rabbits</h3>
+            <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+                <div class="image-grid-card" onclick="toggleExpandable(this, 'basicHutch')">
+                    <div class="img-container" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCxxzrWUhc29lizGKpempAg2bdOYwXQeKdJNqDgKxAtcmFE028fP8rGG7UF4KqFyqIK7PHpIvKsKZ8yhTBHl0B6c0Y8rz3DKVUnlUwtngGtlI07RFQyj0Z2pebi4xal3Eu_-UNch5EFJZ47qxItEbhytTngIQ3miSv1ZMZrK2vQwPnzzbFm1UPHWYsjq6aNj14BndGcTJWKEH3yZ0dkizUOOWmSmVTFt-IqDR9z6R78vI-h3EkSUcuJaZ5h5KabghzzV5G1xs5Rw9ou");'></div>
+                    <div class="text-content">
+                        <p>Basic Hutch Design</p>
+                        <p class="text-sm">Simple and effective.</p>
+                    </div>
+                    <div id="basicHutch" class="expandable-content">
+                        <p>A basic hutch (1.4m x 0.6m) houses 1-3 rabbits. Use wire mesh for ventilation and wood for durability.</p>
+                        <ul class="list-disc pl-5">
+                            <li>Cost: ~R1500-2000.</li>
+                            <li>Materials: Wood, wire mesh, nails.</li>
+                            <li><a href="https://www.backyardchickens.com/articles/how-to-build-a-rabbit-hutch.74476/" target="_blank" class="text-blue-600 hover:underline">DIY Hutch Guide</a></li>
+                        </ul>
+                    </div>
+                </div>
+                    <div class="image-grid-card" onclick="tiered-system">
+                        <div class="img-container" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC1OWvQTa8g4z2S7kcCzZCk5jxz82PZgcNy1wZdaxlI4ejd0mlOhIZPgZFsQN-nzA3FMLavE7ol7UvImI6bfD0xCHw7oy1OWgsGSPECQqlaJDxW47b1FrAkxA9ERBCavPud40DDt91Dxn3NzECQMlGUOZDl2U0_PqQsOihnuR1Q-Kkdh-qVBR8i61moFGCSf-CsQf2hPgcNNPRDlFgACc6pQPOH5iqtF121mffZ-0j3gRDO0gFlBpTPwooqsFCSfe6S-P1n4nDiwUU8');"></div>
+                            <div class="text-content">
+                                <p>Tiered System</p>
+                                <p class="text-sm">Space-saving for multiple rabbits.</p>
+                            </div>
+                            <div id="tieredSystem" class="expandable-content">
+                            <p>Stack 2-3 hutches vertically to house more rabbits efficiently.</p>
+                            <ul class="list-disc pl-5">
+                                <li>Cost: ~R3000-5000.</li>
+                                <li>Saves land space.</li>
+                                <li><a href="https://www.youtube.com/watch?v=DIY_Rabbit_Hutch" target="_blank" class="text-blue-600 hover:underline">Hutch Video Guide</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                        <div class="image-grid-card" onclick="hutchWithRun">
+                            <div class="img-container" style="background-image: url('https://lh3.googleuser.com/aida-public/AB6AXuBJDXLEWS5WN3TbZ4MUwKPOO4CIFepQM4S5VHGO1_UM480z5zZPc47iSCr2DTigx_mfPzQIU2td_M4ild-5is3eRzJg53SC4Kqq7F0MUjGe_wrM586bXXG0VcH57TcxUzp8-lz9TU1FJw36bb7-mB1uSLMcFJnReUY50JJH09WWq8_6AsinvyWblhtwpHM_VU6LhAJNI4AjtWuaVK24ytDRGl5eRZ1jMgSCO993ml0uMZ8nl0whhSEfnEyWRjLCWN1UclghI-iSrQS');"></div>
+                            <div class="text-content">
+                                <p>Hutch with Run</p>
+                                <p class="text-sm">Exercise and grazing space.</p>
+                            </div>
+                            <div id="hutchWithRun" class="expandable-content">
+                                <p>Attach a run (2m x 1m) for rabbits to move freely and graze safely.</p>
+                                <ul class="list-disc pl-5">
+                                    <li>Cost: ~R2000-2500.</li>
+                                    <li>Promotes rabbit health.</li>
+                                    <li><a href="https://www.petmd.com/rabbit/care/evr_rb_rabbit_housing" target="_blank" class="text-blue-600 hover:underline">Housing Tips</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="learningHub" class="content-section">
+                    <h2>Learning Hub: Comprehensive Training</h2>
+                    <p class="text-base font-normal leading-normal pb-3 pt-1">Explore topics to master rabbit farming. Click a topic to reveal facts one at a time.</p>
+                    <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+                        <div class="image-grid-card" onclick="startLearningTopic('feeding')">
+                            <div class="img-container" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBZjX-Vxb1eg0W8kXI91CP4Fjff9XybP1tqMSAikjlc335VbBPPf4HJggMO215x4ITARkev3DOap5p-hthcp7GdvslITSkdo4-5PfZS-YMoVMmUYBTTPiyyjO4xLpgwsfGZD6ICYwdFKCLiX2gKeLJ8ey6WX7NwoSyQi5N8jL-8tM4Z575EQF2YW7bW2");'></div>
+                            <div class="text-content">
+                                <p>Feeding & Nutrition</p>
+                                <p class="text-sm">Diet for healthy rabbits.</p>
+                            </div>
+                        </div>
+                        <div class="image-grid-card" onclick="startLearningTopic('housing')">
+                            <div class="img-container" style='background-image: url("https://lh3.googleuser.com/aida-public/AB6AXuCxxzrWUhc29lizGKpempAg2bdOYwXQeKdJNqDgKxAtcmFE028fP8rGG7UF4KqFyqIK7PHpIvKsKZ8yhTBHl0B6QzY8rz3DKVUnlUwtngGtlI07RFQyj0Z2pebi4xal3Eu_-UNch5EFJZ47qxlIxEbhytTngIQ3miSv1ZMZrK2vQwPnzzbFmluPHW2");'></div>
                                 <div class="text-content">
-                                    <p>The Joy of Raising Your Own Food</p>
-                                    <p class="text-sm">Forge a deeper connection with your family's food source, ensure quality, and teach responsibility.</p>
+                                    <p>Housing & Shelter</p>
+                                    <p class="text-sm">Safe, comfortable homes.</p>
                                 </div>
                             </div>
-                            <div class="image-grid-card">
-                                <div class="img-container" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC1OWvQTa8g4z2S7kcCzZCk5jxz82PZgcNy1wZdaxlI4ejd0mlOhIZPgZFsQN-nzA3FMLavE7ol7UvImI6bfD0xCHw7oy1OWgsGSPECQqlaJDxW47X1FrAkxA9ERBCavPud40DDt91Dxn3NzECQMlGUOZD3JU0_PqQsOihnuR1Q-Kkdh-qVBR8i61moFGCSf-CsQf2hPgcNNPRDlFgACc6pQPOH5iqtF121mffZ-0j3gRDO0gFlBpTPwooqsFCSfe6S-P1n4nDiwUU8");'></div>
+                            <div class="image-grid-card" onclick="startLearningTopic('breeding')">
+                                <div class="img-container" style='background-image: url("https://lh3.googleuser.com/aida-public/AB6AXuC1OWvQTa8g4z2S7kcCzZCk5jxz82PZgcNy1wZdaxlI4ejd0mlOhIZpg2FsQN-nzA3FMLavE7ol7UvImI6bfD0xCHw7oy1OWgsGSPECQqlaJDxW47b1FrAkxA9ERBCavPud40DDt91Dxn3NzECQMlGUOZD3JU0_PqQsOihnuR1Q-KKkdh-qVBR8i61mo");'></div>
                                 <div class="text-content">
-                                    <p>Why Rabbits?</p>
-                                    <p class="text-sm">Quiet, space-efficient, and quick to reproduce, perfect for small properties.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section id="legalLocal" class="content-section">
-                        <h2>Legal Lowdown: Rabbit Farming Bylaws</h2>
-                        <p class="text-base font-normal leading-normal pb-3 pt-1">Understanding local regulations is key. Select your province for specific guidance. <strong class="text-red-600 font-semibold">Always verify with your local municipality as bylaws can change.</strong></p>
-                        <div class="content-card">
-                            <label for="provinceSelector" class="label-text">Select Your Province:</label>
-                            <select id="provinceSelector" class="select-field" onchange="showProvinceBylaws()">
-                                <option value="">-- Select Province --</option>
-                                <option value="GP">Gauteng</option>
-                                <option value="WC">Western Cape</option>
-                                <option value="EC">Eastern Cape</option>
-                                <option value="KZN">KwaZulu-Natal</option>
-                                <option value="LP">Limpopo</option>
-                                <option value="MP">Mpumalanga</option>
-                                <option value="NW">North West</option>
-                                <option value="FS">Free State</option>
-                                <option value="NC">Northern Cape</option>
-                            </select>
-                        </div>
-                        <div id="provinceBylawDetails" class="content-card" style="display: none;"></div>
-                        <div id="gautengBylawContent" style="display:none;">
-                            <div class="content-card">
-                                <p class="text-base font-medium leading-normal">Gauteng (e.g., Johannesburg)</p>
-                                <p class="text-sm text-muted">Typically, you can keep up to 5 adult rabbits without a permit for household purposes. Check with your local municipality.</p>
-                            </div>
-                        </div>
-                        <div id="westernCapeBylawContent" style="display:none;">
-                            <div class="content-card">
-                                <p class="text-base font-medium leading-normal">Western Cape</p>
-                                <p class="text-sm text-muted">Bylaws vary by municipality. Contact your local Environmental Health department.</p>
-                            </div>
-                        </div>
-                        <div id="easternCapeBylawContent" style="display:none;">
-                            <div class="content-card">
-                                <p class="text-base font-medium leading-normal">Eastern Cape</p>
-                                <p class="text-sm text-muted">Regulations are set by local municipalities. Consult your Environmental Health Practitioner.</p>
-                            </div>
-                        </div>
-                    </section>
-                    <section id="ruralYouthEC" class="content-section">
-                        <h2>Rabbit Farming: A Path for Eastern Cape Youth</h2>
-                        <p class="text-base font-normal leading-normal pb-3 pt-1">This section is dedicated to the vibrant youth of the Eastern Cape, particularly in areas like Willowvale and Idutywa.</p>
-                        <div class="content-card">
-                            <p class="text-base font-medium leading-normal">Why Rabbits Thrive in the Eastern Cape</p>
-                            <p class="text-sm text-muted">Rabbits are adaptable, resource-efficient, and perfect for small-scale farming.</p>
-                        </div>
-                        <h3>Interactive Guide: Sharing the Idea</h3>
-                        <p class="text-base font-normal leading-normal pb-3 pt-1">Starting a rabbitry is often a family or community effort.</p>
-                        <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
-                            <div class="image-grid-card">
-                                <div class="img-container" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBJDXLEWS5WN3TbZ4MUwKPOO4CIFepQmI4S5VHGO1_UM480z5zZPc47iSCr2DTigx_mfPzQIU2td_M4ild-5is3eRzJg53SC4Kqq7F0MUjGe_wrM586bXXG0VcH57TcxUzp8-lz9TU1FJw36bb7-mB1uSLMcFJnReUY50JJH09WWq8_6AsinvyWblhtwpHM_VU6LhAJNI4AjtWuaVK24ytDRGl5eRZ1jMgSCO993ml0uMZ8nl0whhSEfnEyWRjLCWN1UclghI-iSrQS");'></div>
-                                <div class="text-content">
-                                    <p>Community Engagement</p>
-                                    <p class="text-sm">Involve your family or community in the rabbitry project.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
-                            <div>
-                                <label for="introducerRole" class="label-text">Who is introducing the idea?</label>
-                                <select id="introducerRole" class="select-field">
-                                    <option value="father">A Father/Male Guardian</option>
-                                    <option value="mother">A Mother/Female Guardian</option>
-                                    <option value="son_highschool">A Son (High School)</option>
-                                    <option value="daughter_highschool">A Daughter (High School)</option>
-                                    <option value="child_primary">A Child (Primary School)</option>
-                                    <option value="community_leader">A Community Member/Leader</option>
-                                </select>
-                            </div>
-                            <div>
-                                <label for="audienceGroup" class="label-text">Who are you talking to?</label>
-                                <select id="audienceGroup" class="select-field">
-                                    <option value="family_elders">Family Elders</option>
-                                    <option value="family_adults">Family Adults</option>
-                                    <option value="family_teens">Teenagers in the Family</option>
-                                    <option value="family_younger_children">Younger Children</option>
-                                    <option value="community_group">A Community Group</option>
-                                </select>
-                            </div>
-                            <div class="flex justify-center">
-                                <button class="btn btn-primary" onclick="generateRuralYouthGuide()">Get Talking Points</button>
-                            </div>
-                        </div>
-                        <div id="ruralYouthGuideOutput" class="content-card" style="display:none;"></div>
-                    </section>
-                    <section id="setupBuild" class="content-section">
-                        <h2>Building Your Rabbitry: Breeds to Hutches</h2>
-                        <div class="content-card">
-                            <p class="text-base font-medium leading-normal">Choosing Your Champions: Popular Breeds</p>
-                            <div class="carousel-container" id="breedCarousel">
-                                <div class="carousel-track">
-                                    <div class="carousel-item">
-                                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxxzrWUhc29lizGKpempAg2bdOYwXQeKdJNqDgKxAtcmFE028fP8rGG7UF4KqFyqIK7PHpIvKsKZ8yhTBHl0B6c0Y8rz3DKVUnlUwtngGtlI07RFQyj0Z2pebi4xal3Eu_-UNch5EFJZ47qxItEbhytTngIQ3miSv1ZMZrK2vQwPnzzbFm1UPHWYsjq6aNj14BndGcTJWKEH3yZ0dkizUOOWmSmVTFt-IqDR9z6R78vI-h3EkSUcuJaZ5h5KabghzzV5G1xs5Rw9ou" alt="New Zealand White">
-                                        <div class="carousel-caption">
-                                            <h4>🐑 New Zealand White</h4>
-                                            <p>Excellent meat production, good mothers.</p>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1OWvQTa8g4z2S7kcCzZCk5jxz82PZgcNy1wZdaxlI4ejd0mlOhIZPgZFsQN-nzA3FMLavE7ol7UvImI6bfD0xCHw7oy1OWgsGSPECQqlaJDxW47X1FrAkxA9ERBCavPud40DDt91Dxn3NzECQMlGUOZD3JU0_PqQsOihnuR1Q-Kkdh-qVBR8i61moFGCSf-CsQf2hPgcNNPRDlFgACc6pQPOH5iqtF121mffZ-0j3gRDO0gFlBpTPwooqsFCSfe6S-P1n4nDiwUU8" alt="Californian">
-                                        <div class="carousel-caption">
-                                            <h4>🐇 Californian</h4>
-                                            <p>Good meat-to-bone ratio, hardy.</p>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJDXLEWS5WN3TbZ4MUwKPOO4CIFepQmI4S5VHGO1_UM480z5zZPc47iSCr2DTigx_mfPzQIU2td_M4ild-5is3eRzJg53SC4Kqq7F0MUjGe_wrM586bXXG0VcH57TcxUzp8-lz9TU1FJw36bb7-mB1uSLMcFJnReUY50JJH09WWq8_6AsinvyWblhtwpHM_VU6LhAJNI4AjtWuaVK24ytDRGl5eRZ1jMgSCO993ml0uMZ8nl0whhSEfnEyWRjLCWN1UclghI-iSrQS" alt="SA Phendula">
-                                        <div class="carousel-caption">
-                                            <h4>🇿🇦 SA Phendula</h4>
-                                            <p>Locally adapted, good for SA conditions.</p>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZjX-Vxb1eg0W8kXI91CP4Fjff9XybP1tqMSAikjlc335VbBPPf4HJggMO215x4ITARkev3DOap5p-hthcp7GdvslITSkdo4-5PfZS-YMoVMmUYBTTPiyyjO4xLpgwsfGZD6ICYwdFKCLiX2gKeLJ8ey6WX7NwoSyQi5N8jL-8tM4Z575EQF2YW7bW2Se_qurCZtbcsqSq2Ice5yuWFta2i3noyggBJV6WmEbDUfBnO0v3Y0XYrF0U6SPFyGhjYwmo6D5znjwrGJHq" alt="Chinchilla Giganta">
-                                        <div class="carousel-caption">
-                                            <h4>🐾 Chinchilla Giganta</h4>
-                                            <p>Large breed, good for meat and fur.</p>
-                                        </div>
+                                    <p>Breeding & Kits</p>
+                                    <p class="text-sm">Managing reproduction.</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="carousel-nav">
-                                <button class="carousel-nav-button prev" onclick="moveCarousel('breedCarousel', -1)">❮</button>
-                                <button class="carousel-nav-button next" onclick="moveCarousel('breedCarousel', 1)">❯</button>
-                            </div>
-                        </div>
-                        <h3>Housing Your Rabbits</h3>
-                        <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
-                            <div class="image-grid-card">
-                                <div class="img-container" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCxxzrWUhc29lizGKpempAg2bdOYwXQeKdJNqDgKxAtcmFE028fP8rGG7UF4KqFyqIK7PHpIvKsKZ8yhTBHl0B6c0Y8rz3DKVUnlUwtngGtlI07RFQyj0Z2pebi4xal3Eu_-UNch5EFJZ47qxItEbhytTngIQ3miSv1ZMZrK2vQwPnzzbFm1UPHWYsjq6aNj14BndGcTJWKEH3yZ0dkizUOOWmSmVTFt-IqDR9z6R78vI-h3EkSUcuJaZ5h5KabghzzV5G1xs5Rw9ou");'></div>
-                                <div class="text-content">
-                                    <p>Basic Hutch Design</p>
-                                    <p class="text-sm">Simple, effective, and easy to build.</p>
+                            <div id="learn-content" class="learn-fact-container">
+                                <div id="learnFactText"></div>
+                                <div class="flex justify-between mt-4">
+                                    <button class="btn btn-secondary" onclick="prevFact()">Previous</button>
+                                    <button class="btn btn-primary" onclick="nextFact()">Next</button>
                                 </div>
                             </div>
-                            <div class="image-grid-card">
-                                <div class="img-container" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC1OWvQTa8g4z2S7kcCzZCk5jxz82PZgcNy1wZdaxlI4ejd0mlOhIZPgZFsQN-nzA3FMLavE7ol7UvImI6bfD0xCHw7oy1OWgsGSPECQqlaJDxW47X1FrAkxA9ERBCavPud40DDt91Dxn3NzECQMlGUOZD3JU0_PqQsOihnuR1Q-Kkdh-qVBR8i61moFGCSf-CsQf2hPgcNNPRDlFgACc6pQPOH5iqtF121mffZ-0j3gRDO0gFlBpTPwooqsFCSfe6S-P1n4nDiwUU8");'></div>
-                                <div class="text-content">
-                                    <p>Tiered System</p>
-                                    <p class="text-sm">Space-saving for multiple rabbits.</p>
-                                </div>
-                            </div>
-                            <div class="image-grid-card">
-                                <div class="img-container" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBJDXLEWS5WN3TbZ4MUwKPOO4CIFepQmI4S5VHGO1_UM480z5zZPc47iSCr2DTigx_mfPzQIU2td_M4ild-5is3eRzJg53SC4Kqq7F0MUjGe_wrM586bXXG0VcH57TcxUzp8-lz9TU1FJw36bb7-mB1uSLMcFJnReUY50JJH09WWq8_6AsinvyWblhtwpHM_VU6LhAJNI4AjtWuaVK24ytDRGl5eRZ1jMgSCO993ml0uMZ8nl0whhSEfnEyWRjLCWN1UclghI-iSrQS");'></div>
-                                <div class="text-content">
-                                    <p>Hutch with Run</p>
-                                    <p class="text-sm">Allows for exercise and grazing.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section id="learningHub" class="content-section">
-                        <h2>Learning Hub: Guides, Videos & DIY</h2>
-                        <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
-                            <div class="image-grid-card">
-                                <div class="img-container" style='background-image: url("https://lh3.googleus
-ercontent.com/aida-public/AB6AXuBZjX-Vxb1eg0W8kXI91CP4Fjff9XybP1tqMSAikjlc335VbBPPf4HJggMO215x4ITARkev3DOap5p-hthcp7GdvslITSkdo4-5PfZS-YMoVMmUYBTTPiyyjO4xLpgwsfGZD6ICYwdFKCLiX2gKeLJ8ey6WX7NwoSyQi5N8jL-8tM4Z575EQF2YW7bW2Se_qurCZtbcsqSq2Ice5yuWFta2i3noyggBJV6WmEbDUfBnO0v3Y0XYrF0U6SPFyGhjYwmo6D5znjwrGJHq");'></div>
-                                <div class="text-content">
-                                    <p>Rabbit Care Guides</p>
-                                    <p class="text-sm">Detailed guides on feeding, health, and daily management.</p>
-                                </div>
-                            </div>
-                            <div class="image-grid-card">
-                                <div class="img-container" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCxxzrWUhc29lizGKpempAg2bdOYwXQeKdJNqDgKxAtcmFE028fP8rGG7UF4KqFyqIK7PHpIvKsKZ8yhTBHl0B6c0Y8rz3DKVUnlUwtngGtlI07RFQyj0Z2pebi4xal3Eu_-UNch5EFJZ47qxItEbhytTngIQ3miSv1ZMZrK2vQwPnzzbFm1UPHWYsjq6aNj14BndGcTJWKEH3yZ0dkizUOOWmSmVTFt-IqDR9z6R78vI-h3EkSUcuJaZ5h5KabghzzV5G1xs5Rw9ou");'></div>
-                                <div class="text-content">
-                                    <p>Video Tutorials</p>
-                                    <p class="text-sm">Visual guides on hutch building, handling rabbits, and more.</p>
-                                </div>
-                            </div>
-                            <div class="image-grid-card">
-                                <div class="img-container" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC1OWvQTa8g4z2S7kcCzZCk5jxz82PZgcNy1wZdaxlI4ejd0mlOhIZPgZFsQN-nzA3FMLavE7ol7UvImI6bfD0xCHw7oy1OWgsGSPECQqlaJDxW47X1FrAkxA9ERBCavPud40DDt91Dxn3NzECQMlGUOZD3JU0_PqQsOihnuR1Q-Kkdh-qVBR8i61moFGCSf-CsQf2hPgcNNPRDlFgACc6pQPOH5iqtF121mffZ-0j3gRDO0gFlBpTPwooqsFCSfe6S-P1n4nDiwUU8");'></div>
-                                <div class="text-content">
-                                    <p>DIY Projects</p>
-                                    <p class="text-sm">Step-by-step instructions for building feeders, waterers, and nest boxes.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section id="budgetCosts" class="content-section">
-                        <h2>Budget & Costs: Planning Your Investment</h2>
-                        <div class="content-card">
-                            <p class="text-base font-medium leading-normal">Initial Investment Calculator</p>
-                            <p class="text-sm text-muted">Adjust quantities and costs to estimate your startup expenses.</p>
-                            <p class="font-semibold text-lg mt-6">Total Initial Estimate: R <span id="grandTotalInvestment" style="color: var(--accent-primary);">4450.00</span></p>
-                        </div>
-                    </section>
-                    <section id="careBreeding" class="content-section">
-                        <h2>Day-to-Day Rabbit Care and Production</h2>
-                        <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
-                            <div class="image-grid-card">
-                                <div class="img-container" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC1OWvQTa8g4z2S7kcCzZCk5jxz82PZgcNy1wZdaxlI4ejd0mlOhIZPgZFsQN-nzA3FMLavE7ol7UvImI6bfD0xCHw7oy1OWgsGSPECQqlaJDxW47X1FrAkxA9ERBCavPud40DDt91Dxn3NzECQMlGUOZD3JU0_PqQsOihnuR1Q-Kkdh-qVBR8i61moFGCSf-CsQf2hPgcNNPRDlFgACc6pQPOH5iqtF121mffZ-0j3gRDO0gFlBpTPwooqsFCSfe6S-P1n4nDiwUU8");'></div>
-                                <div class="text-content">
-                                    <p>Feeding & Nutrition</p>
-                                    <p class="text-sm">Daily diet, hay, pellets, fresh greens.</p>
-                                </div>
-                            </div>
-                            <div class="image-grid-card">
-                                <div class="img-container" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBJDXLEWS5WN3TbZ4MUwKPOO4CIFepQmI4S5VHGO1_UM480z5zZPc47iSCr2DTigx_mfPzQIU2td_M4ild-5is3eRzJg53SC4Kqq7F0MUjGe_wrM586bXXG0VcH57TcxUzp8-lz9TU1FJw36bb7-mB1uSLMcFJnReUY50JJH09WWq8_6AsinvyWblhtwpHM_VU6LhAJNI4AjtWuaVK24ytDRGl5eRZ1jMgSCO993ml0uMZ8nl0whhSEfnEyWRjLCWN1UclghI-iSrQS");'></div>
-                                <div class="text-content">
-                                    <p>Health & Wellness</p>
-                                    <p class="text-sm">Common signs of illness, preventative care.</p>
-                                </div>
-                            </div>
-                            <div class="image-grid-card">
-                                <div class="img-container" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBZjX-Vxb1eg0W8kXI91CP4Fjff9XybP1tqMSAikjlc335VbBPPf4HJggMO215x4ITARkev3DOap5p-hthcp7GdvslITSkdo4-5PfZS-YMoVMmUYBTTPiyyjO4xLpgwsfGZD6ICYwdFKCLiX2gKeLJ8ey6WX7NwoSyQi5N8jL-8tM4Z575EQF2YW7bW2Se_qurCZtbcsqSq2Ice5yuWFta2i3noyggBJV6WmEbDUfBnO0v3Y0XYrF0U6SPFyGhjYwmo6D5znjwrGJHq");'></div>
-                                <div class="text-content">
-                                    <p>Breeding Cycle</p>
-                                    <p class="text-sm">Mating, gestation, kindling, care of kits.</p>
-                                </div>
-                            </div>
-                            <div class="image-grid-card">
-                                <div class="img-container" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCxxzrWUhc29lizGKpempAg2bdOYwXQeKdJNqDgKxAtcmFE028fP8rGG7UF4KqFyqIK7PHpIvKsKZ8yhTBHl0B6c0Y8rz3DKVUnlUwtngGtlI07RFQyj0Z2pebi4xal3Eu_-UNch5EFJZ47qxItEbhytTngIQ3miSv1ZMZrK2vQwPnzzbFm1UPHWYsjq6aNj14BndGcTJWKEH3yZ0dkizUOOWmSmVTFt-IqDR9z6R78vI-h3EkSUcuJaZ5h5KabghzzV5G1xs5Rw9ou");'></div>
-                                <div class="text-content">
-                                    <p>Hutch Cleaning</p>
-                                    <p class="text-sm">Regular cleaning for healthy rabbits.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section id="harvestKitchen" class="content-section">
-                        <h2>From Kit to Kitchen: Harvesting & Nutrition</h2>
-                        <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+                        </section>
+                        <section id="budgetCosts" class="content-section">
+                            <h2>Budget & Costs: Plan Your Investment</h2>
                             <div class="content-card">
-                                <p class="text-base font-medium leading-normal">Nutritional Value Comparison</p>
-                                <div class="chart-container">
-                                    <canvas id="nutritionalComparisonChart"></canvas>
+                                <p class="text-base font-medium leading-normal">Investment Calculator Wizard</p>
+                                <p class="text-sm text-muted">Select your province and rabbit numbers to estimate costs and timeline.</p>
+                                <div class="space-y-4">
+                                    <div>
+                                        <label for="budgetProvince" class="label-text">Province:</label>
+                                        <select id="budgetProvince" class="select-field">
+                                            <option value="EC">Eastern Cape</option>
+                                            <option value="KZN">KwaZulu-Natal</option>
+                                            <option value="LP">Limpopo</option>
+                                            <option value="MP">Mpumalanga</option>
+                                            <option value="GP">Gauteng</option>
+                                            <option value="WC">Western Cape</option>
+                                            <option value="NW">North West</option>
+                                            <option value="FS">Free State</option>
+                                            <option value="NC">Northern Cape</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label for="numDoes" class="label-text">Number of Does:</label>
+                                        <input type="number" id="numDoes" class="input-field" min="1" value="2">
+                                    </div>
+                                    <div>
+                                        <label for="numBucks" class="label-text">Number of Bucks:</label>
+                                        <input type="number" id="numBucks" class="input-field" min="1" value="1">
+                                    </div>
+                                    <div class="flex justify-center">
+                                        <button class="btn btn-primary" onclick="calculateBudget()">Calculate</button>
+                                    </div>
+                                </div>
+                                <div id="budgetOutput" class="mt-4"></div>
+                            </div>
+                        </section>
+                        <section id="careBreeding" class="content-section">
+                            <h2>Day-to-Day Rabbit Care</h2>
+                            <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+                                <div class="image-grid-card" onclick="toggleExpandable(this, 'feedingNutrition')">
+                                    <div class="img-container" style='background-image: url("https://lh3.googleuser.com/aida-public/AB6AXuC1OWvQTa8g4z2S7kcCzZCk5jxz82PZgcNy1wZdaxlI4ejd0mlOhIZPg2FsQN-nzA3FMLavE7ol7UvImI6bfD0xCHw7oy1OWgsGSPECQqlaJDxW47b1FrAkxA9ERBCavPud40DDt91Dxn3NzECQMlGUOZD3JU0_PqQsOihnuR1Q-KKkdh-qVBR8i61mo");'></div>
+                                    <div class="text-content">
+                                        <p>Feeding & Nutrition</p>
+                                        <p class="text-sm">Daily diet essentials.</p>
+                                    </div>
+                                    <div id="feedingNutrition" class="expandable-content">
+                                        <p>Provide hay, pellets (R150/25kg), and fresh greens daily. Water must be clean and constant.</p>
+                                        <ul class="list-disc pl-5">
+                                            <li>Hay: Unlimited, promotes digestion.</li>
+                                            <li>Pellets: 100g/day per adult.</li>
+                                            <li><a href="https://www.rspca.org.uk/adviceandwelfare/pets/rabbits/diet" target="_blank" class="text-blue-600 hover:underline">Feeding Guide</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="image-grid-card" onclick="toggleExpandable(this, 'healthWellness')">
+                                    <div class="img-container" style='background-image: url("https://lh3.googleuser.com/aida-public/AB6AXuBJDXLEWS5WN3TbZ4MUwKPOO4CIFepQM4S5VHGO1_UM480z5zZPc47iSCr2DTigx_mfPzQIU2td_M4ild-5is3eRzJg53SC4Kqq7F0MUjGe_wrM586bXXG0VcH57TcxUzp8-lz9TU1FJw36bb7-mB1uSLMcFJnReUY50JJH09WWq8_6AsinvyWblhtwpHM_VU6LhAJNI4AjtWuaVK24ytDRGl5eRZ1jMgSCO993ml0uMZ8nl0whhSEfnEyWRjLCWN1UclghI-iSrQS");'></div>
+                                    <div class="text-content">
+                                        <p>Health & Wellness</p>
+                                        <p class="text-sm">Preventative care tips.</p>
+                                    </div>
+                                    <div id="healthWellness" class="expandable-content">
+                                        <p>Check for signs like lethargy or runny eyes. Vaccinations may cost R100/rabbit annually.</p>
+                                        <ul class="list-disc pl-5">
+                                            <li>Regular vet visits.</li>
+                                            <li>Monitor teeth and claws.</li>
+                                            <li><a href="https://www.petmd.com/rabbit/care/evr_rb_rabbit_health_care" target="_blank" class="text-blue-600 hover:underline">Health Tips</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="image-grid-card" onclick="toggleExpandable(this, 'breedingCycle')">
+                                    <div class="img-container" style='background-image: url("https://lh3.googleuser.com/aida-public/AB6AXuBZjX-Vxb1eg0W8kXI91CP4Fjff9XybP1tqMSAikjlc335VbBPPf4HJggMO215x4ITARkev3DOap5p-hthcp7GdvslITSkdo4-5PfZS-YMoVMmUYBTTPiyyjO4xLpgwsfGZD6ICYwdFKCLiX2gKeLJ8ey6WX7NwoSyQi5N8jL-8tM4Z575EQF2YW7bW2");'></div>
+                                    <div class="text-content">
+                                        <p>Breeding Cycle</p>
+                                        <p class="text-sm">Mating and kit care.</p>
+                                    </div>
+                                    <div id="breedingCycle" class="expandable-content">
+                                        <p>Gestation lasts 28-35 days. Provide nest boxes (R200 each) for kindling.</p>
+                                        <ul class="list-disc pl-5">
+                                            <li>Litter size: 6-10 kits.</li>
+                                            <li>Wean at 6-8 weeks.</li>
+                                            <li><a href="https://www.rabbit.org/care/breeding.html" target="_blank" class="text-blue-600 hover:underline">Breeding Guide</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="image-grid-card" onclick="toggleExpandable(this, 'hutchCleaning')">
+                                    <div class="img-container" style='background-image: url("https://lh3.googleuser.com/aida-public/AB6AXuCxxzrWUhc29lizGKpempAg2bdOYwXQeKdJNqDgKxAtcmFE028fP8rGG7UF4KqFyqIK7PHpIvKsKZ8yhTBHl0B6QzY8rz3DKVUnlUwtngGtlI07RFQyj0Z2pebi4xal3Eu_-UNch5EFJZ47qxlIxEbhytTngIQ3miSv1ZMZrK2vQwPnzzbFmluPHW2");'></div>
+                                    <div class="text-content">
+                                        <p>Hutch Cleaning</p>
+                                        <p class="text-sm">Maintain hygiene.</p>
+                                    </div>
+                                    <div id="hutchCleaning" class="expandable-content">
+                                        <p>Clean weekly with vinegar solution (R20/liter). Remove waste daily.</p>
+                                        <ul class="list-disc pl-5">
+                                            <li>Prevents disease.</li>
+                                            <li>Improves rabbit comfort.</li>
+                                            <li><a href="https://www.rspca.org.uk/adviceandwelfare/pets/rabbits/environment" target="_blank" class="text-blue-600 hover:underline">Cleaning Tips</a></li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
+                        </section>
+                        <section id="harvestKitchen" class="content-section">
+                            <h2>From Kit to Kitchen: Harvesting & Nutrition</h2>
                             <div class="content-card">
-                                <p class="text-base font-medium leading-normal">Homegrown vs. Store-Bought Costs</p>
-                                <div class="chart-container">
-                                    <canvas id="costComparisonChart"></canvas>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section id="timelineSim" class="content-section">
-                        <h2>Rabbitry Timeline Simulator</h2>
-                        <div class="content-card">
-                            <p class="text-base font-medium leading-normal">Simulation Setup</p>
-                            <p class="text-sm text-muted">Enter your starting numbers to see a potential production timeline.</p>
-                            <div class="flex justify-center">
-                                <button class="btn btn-primary" onclick="runRabbitrySimulation()">Run Simulation</button>
-                            </div>
-                        </div>
-                        <div id="simulationOutput" class="content-card">
-                            <p class="text-base font-medium leading-normal">Simulation Results</p>
-                            <p class="text-sm text-muted">Output will appear here, e.g., estimated number of kits over time.</p>
-                        </div>
-                    </section>
-                    <section id="funQuizzes" class="content-section">
-                        <h2>Fun Quizzes: Test Your Rabbit Knowledge!</h2>
-                        <div id="quizCategorySelector" class="quiz-category-selector text-center">
-                            <button class="btn btn-secondary" onclick="startQuiz('Rabbit Basics')">Basics</button>
-                            <button class="btn btn-secondary" onclick="startQuiz('Breeding & Care')">Care</button>
-                            <button class="btn btn-secondary" onclick="startQuiz('Compliance & Legal')">Legal</button>
-                            <button class="btn btn-secondary" onclick="startQuiz('Harvest & Recipes')">Harvest</button>
-                            <button class="btn btn-secondary" onclick="startQuiz('Fun Facts')">Fun Facts</button>
-                        </div>
-                        <div id="quizArea" style="display:none;">
-                            <h3 id="quizCategoryTitle" class="text-center"></h3>
-                            <div id="quizQuestionContainer"></div>
-                            <div id="quizNavigation" class="flex justify-between">
-                                <button class="btn btn-secondary" id="nextQuestionBtn" onclick="nextQuizQuestion()">Next</button>
-                                <button class="btn btn-primary" id="submitQuizBtn" style="display:none;" onclick="submitFullQuiz()">Get Results</button>
-                            </div>
-                            <div id="quizResultsArea" class="content-card" style="display:none;"></div>
-                        </div>
-                    </section>
-                    <section id="recipes" class="content-section">
-                        <h2>Delicious Rabbit Recipes</h2>
-                        <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
-                            <div class="recipe-card">
-                                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4Aiamb8aPoQ39etuodmUY6lzwKVOA9NLKGR_h1ZAfxemtztuzPfXFbTh4wGTG-t8HzLcPDqfHK54mq-5EiMRHGmF3ZNgI-sBbJOGxMk7naDyDowSFtGtXmJY9amjpoDt8xjWRUaRZWwbG6eUqNDr55eMJRQPCRRDfdWXityQskiHdoXUKrR8f9JvnhFzqwE4XLSRQ4ILo80jfBCwqSwvsNTezOc1eYDJtg-kJsKxrSuLvsHy7wPz4ODjCV08zsHDgjLkCqITJdRiH" alt="Roasted Rabbit">
-                                <div class="recipe-card-content">
-                                    <h4>Simple Roasted Rabbit with Herbs</h4>
-                                    <p>A classic, easy recipe perfect for beginners.</p>
-                                </div>
-                            </div>
-                            <div class="recipe-card">
-                                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDe-UQoyXlj-j4KXuS-2M4CnqAs5YkvjVHd6bzfRXQ_e9SSwcV_WI2qTz1UB_2rbF4HaGDG58MhELzXdcnq364UTXrKoKArbJMDnZ7xglQQ9REiGjt5_9KzGu14MsHPKaRwxRCrGPwb3ca4TWWUuKp7KGHq896uv8gSwgj6hQrpDgcP-9LWA6IuHXo5XF0WsglDrQx4rcF_qUVq1RcMWiqRxtYhckDDmIyOn9dg_MU5jNO3IR2Yqj4TLBb5uAKAaxHZIMIrHQ8wjHkF" alt="Rabbit Stew">
-                                <div class="recipe-card-content">
-                                    <h4>Hearty Rabbit & Vegetable Stew</h4>
-                                    <p>Comfort food at its best, full of flavor.</p>
-                                </div>
-                            </div>
-                            <div class="recipe-card">
-                                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQlZVgaiuJO-ejy1L8UnMsQDrZuSm0X8OkfqE-HnhLVLyIwSGSpLAqWdXwGf6axlv4LQZ5r8vXu-7VfKmHZKfdl149upQIV2QRf6NQoa1rgfrg5dp25kjznL-sHu77bZQXPM-Ce8jQCh_kjwnKsA-Ei_FQUohdPCkqpapKm_iHbJLawumDPJbUUvRPhSqki3QH5-HLG_l_mezRbWfBl3W6PKK25Ye_GixaCiJXXlTT3F8Dnos_RS-9Y_VU64WqXBJsHaMBzwny7JZB" alt="Grilled Rabbit">
-                                <div class="recipe-card-content">
-                                    <h4>Grilled Lemon-Herb Rabbit</h4>
-                                    <p>A zesty and healthy option for the braai.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section id="resources" class="content-section">
-                        <h2>Resources & Links for SA Rabbit Farmers</h2>
-                        <p class="text-base font-normal leading-normal pb-3 pt-1">A curated list of resources to support your rabbit farming journey in South Africa.</p>
-                        <div class="accordion-container space-y-3">
-                            <div>
-                                <button class="expand-button" onclick="toggleExpandable(this, 'nationalResources')">
-                                    National Departments & Organizations <i class="fas fa-chevron-down transition-transform ml-auto"></i>
-                                </button>
-                                <div id="nationalResources" class="expandable-content">
-                                    <ul class="list-disc space-y-2 pl-5 text-sm text-muted">
-                                        <li><strong>Department of Agriculture, Land Reform and Rural Development (DALRRD):</strong> <a href="https://www.dalrrd.gov.za" target="_blank" class="text-blue-600 hover:underline">www.dalrrd.gov.za</a></li>
-                                        <li><strong>Agricultural Research Council (ARC):</strong> <a href="https://www.arc.agric.za" target="_blank" class="text-blue-600 hover:underline">www.arc.agric.za</a></li>
-                                        <li><strong>National Agricultural Marketing Council (NAMC):</strong> <a href="https://www.namc.co.za" target="_blank" class="text-blue-600 hover:underline">www.namc.co.za</a></li>
+                                <p class="text-base font-medium leading-normal">How to Harvest</p>
+                                <p class="text-sm text-muted">Harvest at 8-12 weeks for optimal meat quality. Use humane methods.</p>
+                                <div class="expandable-content" id="harvestGuide">
+                                    <p>Steps: Stun, bleed, skin, and dress. Process takes ~30 minutes per rabbit.</p>
+                                    <ul class="list-disc pl-5">
+                                        <li>Tools: Sharp knife, gloves (R100/set).</li>
+                                        <li>Hygiene: Clean workspace.</li>
+                                        <li><a href="https://www.youtube.com/watch?v=harvest_rabbit" target="_blank" class="text-blue-600 hover:underline">Watch Tutorial</a></li>
                                     </ul>
                                 </div>
                             </div>
-                            <div>
-                                <button class="expand-button" onclick="toggleExpandable(this, 'provincialResources')">
-                                    Provincial Agricultural Contacts <i class="fas fa-chevron-down transition-transform ml-auto"></i>
-                                </button>
-                                <div id="provincialResources" class="expandable-content">
-                                    <p class="text-sm text-muted">Contact your provincial Department of Agriculture for localized support.</p>
+                            <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+                                <div class="content-card">
+                                    <p class="text-base font-medium leading-normal">Nutritional Comparison</p>
+                                    <div class="chart-container">
+                                        <canvas id="nutritionalComparisonChart"></canvas>
+                                    </div>
+                                </div>
+                                <div class="content-card">
+                                    <p class="text-base font-medium leading-normal">Cost Comparison</p>
+                                    <div class="chart-container">
+                                        <canvas id="costComparisonChart"></canvas>
+                                    </div>
                                 </div>
                             </div>
-                            <div>
-                                <button class="expand-button" onclick="toggleExpandable(this, 'trainingGrants')">
-                                    Training, Workshops & Funding <i class="fas fa-chevron-down transition-transform ml-auto"></i>
-                                </button>
-                                <div id="trainingGrants" class="expandable-content">
-                                    <p class="text-sm text-muted">Explore opportunities for skills development and financial assistance.</p>
+                        </section>
+                        <section id="timelineSim" class="content-section">
+                            <h2>Rabbitry Timeline Simulator</h2>
+                            <div class="content-card">
+                                <p class="text-base font-medium leading-normal">Simulation Setup</p>
+                                <p class="text-sm text-muted">Enter starting numbers to project production.</p>
+                                <div class="space-y-4">
+                                    <div>
+                                        <label for="simDoes" class="label-text">Number of Does:</label>
+                                        <input type="number" id="simDoes" class="input-field" min="1" value="2">
+                                    </div>
+                                    <div>
+                                        <label for="simBucks" class="label-text">Number of Bucks:</label>
+                                        <input type="number" id="simBucks" class="input-field" min="1" value="1">
+                                    </div>
+                                    <div class="flex justify-center">
+                                        <button class="btn btn-primary" onclick="runRabbitrySimulation()">Run Simulation</button>
+                                    </div>
+                                </div>
+                                <div id="simulationOutput" class="mt-4"></div>
+                            </div>
+                        </section>
+                        <section id="funQuizzes" class="content-section">
+                            <h2>Fun Quizzes: Test Your Knowledge!</h2>
+                            <div id="quizCategorySelector" class="quiz-category-selector text-center">
+                                <button class="btn btn-secondary" onclick="startQuiz('Rabbit Basics')">Basics</button>
+                                <button class="btn btn-secondary" onclick="startQuiz('Breeding & Care')">Care</button>
+                                <button class="btn btn-secondary" onclick="startQuiz('Compliance & Legal')">Legal</button>
+                                <button class="btn btn-secondary" onclick="startQuiz('Harvest & Recipes')">Harvest</button>
+                                <button class="btn btn-secondary" onclick="startQuiz('Fun Facts')">Fun Facts</button>
+                            </div>
+                            <div id="quizArea" style="display:none;">
+                                <h3 id="quizCategoryTitle" class="text-center"></h3>
+                                <div id="quizQuestionContainer"></div>
+                                <div id="quizNavigation" class="flex justify-between">
+                                    <button class="btn btn-secondary" id="nextQuestionBtn" onclick="nextQuizQuestion()">Next</button>
+                                    <button class="btn btn-primary" id="submitQuizBtn" style="display:none;" onclick="submitFullQuiz()">Get Results</button>
+                                </div>
+                                <div id="quizResultsArea" class="content-card" style="display:none;"></div>
+                            </div>
+                        </section>
+                        <section id="recipes" class="content-section">
+                            <h2>Delicious Rabbit Recipes</h2>
+                            <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+                                <div class="recipe-card" onclick="toggleExpandable(this, 'roastedRabbit')">
+                                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4Aiamb8aPoQ39etuodmUY6lzwKVOA9NLKGR_h1ZAfxemtztuzPfXFbTh4wGTG-t8HzLcPDqfHK54mq-5EiMRHGmF3ZNgI-sBbJOGxMk7naDyDowSFtGtXmJY9amjpoDt8xjWRUaRZWwbG6eUqNDr55eMJRQPCRRDfdWXityQskiHdoXUKrR8f9JvnhFzqwE4XLSRQ4ILo80jfBCwqSwvsNTezOc1eYDJtg-kJsKxrSuLvsHy7wPz4ODjCV08zsHDgjLkCqITJdRiH" alt="Roasted Rabbit">
+                                    <div class="recipe-card-content">
+                                        <h4>Roasted Rabbit with Herbs</h4>
+                                        <p>Classic and easy for beginners.</p>
+                                    </div>
+                                    <div id="roastedRabbit" class="expandable-content">
+                                        <p><strong>Ingredients:</strong> 1 rabbit (1.5kg, R150), rosemary, garlic, olive oil, salt.</p>
+                                        <p><strong>Steps:</strong> Preheat oven to 180°C. Rub rabbit with oil, herbs, and garlic. Roast for 1.5 hours.</p>
+                                        <iframe width="100%" height="200" src="https://www.youtube.com/embed/rabbit_recipe_video" frameborder="0" allowfullscreen></iframe>
+                                        <p><a href="https://www.youtube.com/results?search_query=rabbit+recipes" target="_blank" class="text-blue-600 hover:underline">More Recipes</a></p>
+                                    </div>
+                                </div>
+                                <div class="recipe-card" onclick="toggleExpandable(this, 'rabbitStew')">
+                                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDe-UQoyXlj-j4KXuS-2M4CnqAs5YkvjVHd6bzfRXQ_e9SSwcV_WI2qTz1UB_2rbF4HaGDG58MhELzXdcnq364UTXrKoKArbJMDnZ7xglQQ9REiGjt5_9KzGu14MsHPKaRwxRCrGPwb3ca4TWWUuKp7KGHq896uv8gSwgj6hQrpDgcP-9LWA6IuHXo5XF0WsglDrQx4rcF_qUVq1RcMWiqRxtYhckDDmIyOn9dg_MU5jNO3IR2Yqj4TLBb5uAKAaxHZIMIrHQ8wjHkF" alt="Rabbit Stew">
+                                    <div class="recipe-card-content">
+                                        <h4>Hearty Rabbit & Vegetable Stew</h4>
+                                        <p>Comfort food full of flavor.</p>
+                                    </div>
+                                    <div id="rabbitStew" class="expandable-content">
+                                        <p><strong>Ingredients:</strong> 1 rabbit, carrots, potatoes, onions, stock (R50 total).</p>
+                                        <p><strong>Steps:</strong> Brown rabbit, add vegetables and stock, simmer for 2 hours.</p>
+                                        <iframe width="100%" height="200" src="https://www.youtube.com/embed/rabbit_stew_video" frameborder="0" allowfullscreen></iframe>
+                                        <p><a href="https://www.youtube.com/results?search_query=rabbit+stew" target="_blank" class="text-blue-600 hover:underline">More Recipes</a></p>
+                                    </div>
                                 </div>
                             </div>
-                            <div>
-                                <button class="expand-button" onclick="toggleExpandable(this, 'researchInfo')">
-                                    Studies, Research & Further Info <i class="fas fa-chevron-down transition-transform ml-auto"></i>
-                                </button>
-                                <div id="researchInfo" class="expandable-content">
-                                    <p class="text-sm text-muted">Links to ARC publications, university research, etc.</p>
+                        </section>
+                        <section id="sustainableProtein" class="content-section">
+                            <h2>Sustainable Protein for Rural Communities</h2>
+                            <p class="text-base font-normal leading-normal pb-3 pt-1">Ideal for rural South Africa, especially Eastern Cape, rabbit farming offers food security and income.</p>
+                            <div class="content-card">
+                                <p class="text-base font-medium leading-normal">Why Rabbits in Eastern Cape (60% Focus)</p>
+                                <p class="text-sm text-muted">Perfect for areas like Willowvale due to mild climate and local forage.</p>
+                                <div class="expandable-content" id="ecFocus">
+                                    <ul class="list-disc pl-5">
+                                        <li>Low-cost feed using local grasses.</li>
+                                        <li>Community projects in Idutywa.</li>
+                                        <li><a href="https://www.arc.agric.za" target="_blank" class="text-blue-600 hover:underline">ARC Resources</a></li>
+                                    </ul>
                                 </div>
                             </div>
-                        </div>
-                    </section>
+                            <div class="content-card">
+                                <p class="text-base font-medium leading-normal">Other Provinces (40% Focus)</p>
+                                <p class="text-sm text-muted">KZN, Limpopo, Mpumalanga, and more benefit from rabbit farming.</p>
+                                <div class="expandable-content" id="otherProvinces">
+                                    <ul class="list-disc pl-5">
+                                        <li>KZN: Humid areas suit rabbit resilience.</li>
+                                        <li>Limpopo: Dry regions use minimal water.</li>
+                                        <li><a href="https://www.dalrrd.gov.za" target="_blank" class="text-blue-600 hover:underline">DALRRD Support</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <h3>Community Engagement</h3>
+                            <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+                                <div>
+                                    <label for="introducerRole" class="label-text">Who is introducing?</label>
+                                    <select id="introducerRole" class="select-field">
+                                        <option value="father">Father</option>
+                                        <option value="mother">Mother</option>
+                                        <option value="youth">Youth</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="audienceGroup" class="label-text">Who are you talking to?</label>
+                                    <select id="audienceGroup" class="select-field">
+                                        <option value="family">Family</option>
+                                        <option value="community">Community</option>
+                                    </select>
+                                </div>
+                                <div class="flex justify-center">
+                                    <button class="btn btn-primary" onclick="generateRuralGuide()">Get Talking Points</button>
+                                </div>
+                            </div>
+                            <div id="ruralGuideOutput" class="content-card" style="display:none;"></div>
+                        </section>
+                        <section id="resources" class="content-section">
+                            <h2>Resources & Links</h2>
+                            <div class="accordion-container space-y-3">
+                                <div>
+                                    <button class="expand-button" onclick="toggleExpandable(this, 'nationalResources')">
+                                        National Organizations <i class="fas fa-chevron-down transition-transform ml-auto"></i>
+                                    </button>
+                                    <div id="nationalResources" class="expandable-content">
+                                        <ul class="list-disc space-y-2 pl-5 text-sm text-muted">
+                                            <li><a href="https://www.dalrrd.gov.za" target="_blank" class="text-blue-600 hover:underline">DALRRD</a></li>
+                                            <li><a href="https://www.arc.agric.za" target="_blank" class="text-blue-600 hover:underline">ARC</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
                 </div>
             </div>
+            <footer class="footer">
+                <p>© 2025 Backyard Rabbitry Guide SA. Happy Farming! <i class="fas fa-carrot" style="color:var(--accent-primary);"></i></p>
+                <p class="text-xs">Consult local authorities for accurate information.</p>
+            </footer>
         </div>
-        <footer class="footer">
-            <p>© 2025 Backyard Rabbitry Guide SA. Happy Farming! <i class="fas fa-carrot" style="color:var(--accent-primary);"></i></p>
-            <p class="text-xs">Information is for guidance only. Always consult local authorities and experts.</p>
-        </footer>
-    </div>
-    <script>
-        let currentSectionIndex = 0;
-        const sections = document.querySelectorAll('.content-section');
-        const mainScrollContainer = document.getElementById('mainScrollContainer');
-        const navButtons = document.querySelectorAll('.spa-tab-button');
-        const numSections = sections.length;
+        <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <script>
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({
+                    pageLanguage: 'en',
+                    includedLanguages: 'af,xh,zu,st,tn,nr,ss,ve,ts,sn,sw,pt,fr',
+                    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+                }, 'google_translate_element');
+            }
 
-        function navigateToSection(sectionIndex) {
-            if (sectionIndex >= 0 && sectionIndex < numSections) {
-                mainScrollContainer.style.transform = `translateX(-${sectionIndex * (100 / numSections)}%)`;
-                currentSectionIndex = sectionIndex;
-                navButtons.forEach((btn, index) => {
-                    btn.classList.toggle('active', index === sectionIndex);
+            let currentSectionIndex = 0;
+            const sections = document.querySelectorAll('.content-section');
+            const mainScrollContainer = document.getElementById('mainScrollContainer');
+            const navButtons = document.querySelectorAll('.spa-tab-button');
+            const numSections = sections.length;
+
+            function navigateToSection(sectionIndex) {
+                if (sectionIndex >= 0 && sectionIndex < numSections) {
+                    mainScrollContainer.style.transform = `translateX(-${sectionIndex * (100 / numSections)}%)`;
+                    currentSectionIndex = sectionIndex;
+                    navButtons.forEach((btn, index) => btn.classList.toggle('active', index === sectionIndex));
+                    const activeButton = navButtons[sectionIndex];
+                    if (activeButton) {
+                        const navScrollable = document.querySelector('.spa-nav-tabs');
+                        const scrollLeft = activeButton.offsetLeft - (navScrollable.offsetWidth / 2) + (activeButton.offsetWidth / 2);
+                        navScrollable.scrollTo({ left: scrollLeft, behavior: 'smooth' });
+                    }
+                }
+            }
+
+            let currentCarouselSlides = {};
+            function setupCarousel(carouselId) {
+                const carousel = document.getElementById(carouselId);
+                if (!carousel) return;
+                const track = carousel.querySelector('.carousel-track');
+                if (!track) return;
+                const slides = Array.from(track.children);
+                if (slides.length === 0) return;
+                const originalTrackDisplay = track.style.display;
+                track.style.display = 'flex';
+                const slideWidth = slides[0].getBoundingClientRect().width;
+                track.style.display = originalTrackDisplay;
+                currentCarouselSlides[carouselId] = { index: 0, track, slides, slideWidth, id: carouselId };
+                showCarouselSlide(carouselId);
+            }
+
+            function moveCarousel(carouselId, direction) {
+                const carouselData = currentCarouselSlides[carouselId];
+                if (!carouselData || carouselData.slides.length === 0) return;
+                const { slides } = carouselData;
+                carouselData.index += direction;
+                if (carouselData.index < 0) carouselData.index = slides.length - 1;
+                if (carouselData.index >= slides.length) carouselData.index = 0;
+                showCarouselSlide(carouselId);
+            }
+
+            function showCarouselSlide(carouselId) {
+                const carouselData = currentCarouselSlides[carouselId];
+                if (!carouselData || !carouselData.track || carouselData.slides.length === 0) return;
+                const { track, index, slideWidth } = carouselData;
+                if (slideWidth <= 0) return;
+                track.style.transform = `translateX(-${index * slideWidth}px)`;
+            }
+
+            function toggleExpandable(element, elementId) {
+                const content = document.getElementById(elementId);
+                if (content) {
+                    const isExpanded = content.style.display === "block";
+                    content.style.display = isExpanded ? "none" : "block";
+                    const icon = element.querySelector('i.fas');
+                    if (icon) {
+                        icon.classList.toggle('fa-chevron-down', isExpanded);
+                        icon.classList.toggle('fa-chevron-up', !isExpanded);
+                    }
+                }
+            }
+
+            const nutritionalData = {
+                labels: ['Rabbit', 'Chicken', 'Beef', 'Lamb'],
+                datasets: [{
+                    label: 'Protein (g/100g)', data: [21, 20, 18, 17],
+                    backgroundColor: 'rgba(250, 198, 56, 0.7)', borderColor: 'rgba(250, 198, 56, 1)', borderWidth: 1
+                }, {
+                    label: 'Fat (g/100g)', data: [8, 12, 15, 20],
+                    backgroundColor: 'rgba(244, 240, 230, 0.7)', borderColor: 'rgba(244, 240, 230, 1)', borderWidth: 1
+                }]
+            };
+
+            const costData = {
+                labels: ['Week 1', 'Week 4', 'Week 8', 'Week 12'],
+                datasets: [{
+                    label: 'Homegrown Rabbit (R/kg)', data: [15, 12, 10, 9],
+                    borderColor: 'rgba(250, 198, 56, 1)', backgroundColor: 'rgba(250, 198, 56, 0.2)', fill: true, tension: 0.1
+                }, {
+                    label: 'Store-Bought Chicken (R/kg)', data: [70, 72, 70, 75],
+                    borderColor: 'rgba(158, 135, 71, 1)', backgroundColor: 'rgba(158, 135, 71, 0.2)', fill: true, tension: 0.1
+                }]
+            };
+
+            function createCharts() {
+                const chartOptions = (titleText) => ({
+                    responsive: true, maintainAspectRatio: false,
+                    plugins: { legend: { labels: { color: 'var(--text-dark)' } }, title: { display: true, text: titleText, color: 'var(--text-dark)' } },
+                    scales: { y: { ticks: { color: 'var(--text-muted)' }, grid: { color: 'var(--border-color)' } }, x: { ticks: { color: 'var(--text-muted)' }, grid: { display: false } } }
                 });
-                const activeButton = navButtons[sectionIndex];
-                if (activeButton) {
-                    const navScrollable = document.querySelector('.spa-nav-tabs');
-                    const scrollLeft = activeButton.offsetLeft - (navScrollable.offsetWidth / 2) + (activeButton.offsetWidth / 2);
-                    navScrollable.scrollTo({ left: scrollLeft, behavior: 'smooth' });
+                const ntx = document.getElementById('nutritionalComparisonChart');
+                if (ntx) new Chart(ntx, { type: 'bar', data: nutritionalData, options: chartOptions('Meat Nutrition Facts (per 100g)') });
+                const ctx = document.getElementById('costComparisonChart');
+                if (ctx) new Chart(ctx, { type: 'line', data: costData, options: chartOptions('Cost Comparison (R/kg over time)') });
+            }
+
+            function calculateBudget() {
+                const province = document.getElementById('budgetProvince').value;
+                const numDoes = parseInt(document.getElementById('numDoes').value) || 2;
+                const numBucks = parseInt(document.getElementById('numBucks').value) || 1;
+                const rabbitCost = 200; // R200 per rabbit
+                const hutchCost = 2000 * Math.ceil((numDoes + numBucks) / 3); // R2000 per hutch, 3 rabbits per hutch
+                const feedCost = 150 * (numDoes + numBucks); // R150/25kg per rabbit for 3 months
+                const miscCost = 500; // Nest boxes, waterers, etc.
+                const totalInitial = (numDoes + numBucks) * rabbitCost + hutchCost + feedCost + miscCost;
+                const monthlyFeed = 50 * (numDoes + numBucks); // Ongoing feed cost
+                const outputDiv = document.getElementById('budgetOutput');
+                outputDiv.innerHTML = `
+                    <p class="text-base font-medium leading-normal">Your Rabbitry Timeline & Costs (${province})</p>
+                    <ul class="list-disc pl-5 text-sm">
+                        <li><strong>Initial Costs (Month 1):</strong> R${totalInitial} (Rabbits: R${(numDoes + numBucks) * rabbitCost}, Hutches: R${hutchCost}, Feed: R${feedCost}, Misc: R${miscCost})</li>
+                        <li><strong>Month 2-3:</strong> Breeding & gestation, feed costs ~R${monthlyFeed}/month</li>
+                        <li><strong>Month 4:</strong> First harvest (~${numDoes * 8} kits), ongoing feed R${monthlyFeed}/month</li>
+                        <li><strong>Total 6 Months:</strong> ~R${totalInitial + monthlyFeed * 5}</li>
+                    </ul>
+                `;
+            }
+
+            function runRabbitrySimulation() {
+                const numDoes = parseInt(document.getElementById('simDoes').value) || 2;
+                const numBucks = parseInt(document.getElementById('simBucks').value) || 1;
+                const litterSize = 8; // Average kits per litter
+                const gestation = 31; // Days
+                const weaning = 42; // Days
+                const harvestAge = 84; // Days (12 weeks)
+                const outputDiv = document.getElementById('simulationOutput');
+                const kitsMonth4 = numDoes * litterSize;
+                const kitsMonth6 = numDoes * litterSize * 2; // Second litter
+                outputDiv.innerHTML = `
+                    <p class="text-base font-medium leading-normal">Simulation Results</p>
+                    <ul class="list-disc pl-5 text-sm">
+                        <li><strong>Month 1:</strong> Setup ${numDoes} does, ${numBucks} bucks</li>
+                        <li><strong>Month 2:</strong> First breeding, gestation (~${gestation} days)</li>
+                        <li><strong>Month 3:</strong> First litter (~${kitsMonth4} kits), weaning at ${weaning} days</li>
+                        <li><strong>Month 4:</strong> First harvest (~${kitsMonth4} rabbits), second breeding</li>
+                        <li><strong>Month 6:</strong> Second harvest (~${kitsMonth6} rabbits)</li>
+                    </ul>
+                `;
+            }
+
+            const provinceBylawData = {
+                "GP": "<div class='content-card'><p class='text-base font-medium leading-normal'>Gauteng</p><p class='text-sm text-muted'>Up to 5 adult rabbits without permit in Johannesburg.</p></div>",
+                "WC": "<div class='content-card'><p class='text-base font-medium leading-normal'>Western Cape</p><p class='text-sm text-muted'>Contact Environmental Health department.</p></div>",
+                "EC": "<div class='content-card'><p class='text-base font-medium leading-normal'>Eastern Cape</p><p class='text-sm text-muted'>Consult local Environmental Health Practitioner.</p></div>",
+                "KZN": "<div class='content-card'><p class='text-base font-medium leading-normal'>KwaZulu-Natal</p><p class='text-sm text-muted'>Check with KZN municipality.</p></div>",
+                "LP": "<div class='content-card'><p class='text-base font-medium leading-normal'>Limpopo</p><p class='text-sm text-muted'>Consult Limpopo municipality.</p></div>",
+                "MP": "<div class='content-card'><p class='text-base font-medium leading-normal'>Mpumalanga</p><p class='text-sm text-muted'>Check with Mpumalanga municipality.</p></div>",
+                "NW": "<div class='content-card'><p class='text-base font-medium leading-normal'>North West</p><p class='text-sm text-muted'>Contact North West municipality.</p></div>",
+                "FS": "<div class='content-card'><p class='text-base font-medium leading-normal'>Free State</p><p class='text-sm text-muted'>Check with Free State municipality.</p></div>",
+                "NC": "<div class='content-card'><p class='text-base font-medium leading-normal'>Northern Cape</p><p class='text-sm text-muted'>Consult Northern Cape municipality.</p></div>",
+            };
+
+            function showProvinceBylaws() {
+                const selector = document.getElementById('provinceSelector');
+                const detailsDiv = document.getElementById('provinceBylawDetails');
+                if (selector && detailsDiv) {
+                    const selectedValue = selector.value;
+                    detailsDiv.innerHTML = provinceBylawData[selectedValue] || '';
+                    detailsDiv.style.display = selectedValue ? 'block' : 'none';
                 }
             }
-        }
 
-        let currentCarouselSlides = {};
-        function setupCarousel(carouselId) {
-            const carousel = document.getElementById(carouselId);
-            if (!carousel) return;
-            const track = carousel.querySelector('.carousel-track');
-            if (!track) return;
-            const slides = Array.from(track.children);
-            if (slides.length === 0) return;
-            const originalTrackDisplay = track.style.display;
-            track.style.display = 'flex';
-            const slideWidth = slides[0].getBoundingClientRect().width;
-            track.style.display = originalTrackDisplay;
-            currentCarouselSlides[carouselId] = { index: 0, track, slides, slideWidth, id: carouselId };
-            showCarouselSlide(carouselId);
-        }
+            const quizBank = [
+                { category: 'Rabbit Basics', question: "What is a male rabbit called?", options: ["Doe", "Buck", "Kit", "Warren"], answer: "Buck", explanation: "A male rabbit is called a buck, while a female is a doe and a baby is a kit." },
+                { category: 'Breeding & Care', question: "Average gestation period?", options: ["20-25 days", "28-35 days", "40-45 days", "50-60 days"], answer: "28-35 days", explanation: "Rabbits have a gestation period of about 28-35 days." },
+                { category: 'Compliance & Legal', question: "Max rabbits without permit in Johannesburg?", options: ["Up to 5", "Up to 10", "Up to 20", "Unlimited"], answer: "Up to 5", explanation: "Johannesburg allows up to 5 adult rabbits without a permit." },
+                { category: 'Harvest & Recipes', question: "Harvest age for meat rabbits?", options: ["4-6 weeks", "8-12 weeks", "6-9 months", "1-2 years"], answer: "8-12 weeks", explanation: "Meat rabbits are typically harvested at 8-12 weeks for optimal quality." },
+                { category: 'Fun Facts', question: "Can rabbits swim?", options: ["Yes", "No"], answer: "Yes", explanation: "Rabbits can swim but generally avoid water." }
+            ];
 
-        function moveCarousel(carouselId, direction) {
-            const carouselData = currentCarouselSlides[carouselId];
-            if (!carouselData || carouselData.slides.length === 0) return;
-            const { slides } = carouselData;
-            carouselData.index += direction;
-            if (carouselData.index < 0) carouselData.index = slides.length - 1;
-            if (carouselData.index >= slides.length) carouselData.index = 0;
-            showCarouselSlide(carouselId);
-        }
+            let currentQuizQuestions = [];
+            let currentQuestionIndex = 0;
+            let userScore = 0;
+            let selectedAnswerForCurrentQuestion = null;
+            let userAnswers = [];
 
-        function showCarouselSlide(carouselId) {
-            const carouselData = currentCarouselSlides[carouselId];
-            if (!carouselData || !carouselData.track || carouselData.slides.length === 0) return;
-            const { track, index, slideWidth } = carouselData;
-            if (slideWidth <= 0) {
-                console.warn(`Carousel ${carouselId}: Invalid slideWidth.`);
-                return;
-            }
-            track.style.transform = `translateX(-${index * slideWidth}px)`;
-        }
-
-        function toggleExpandable(button, elementId) {
-            const content = document.getElementById(elementId);
-            const icon = button.querySelector('i.fas');
-            if (content) {
-                const isExpanded = content.style.display === "block";
-                content.style.display = isExpanded ? "none" : "block";
-                icon.classList.toggle('fa-chevron-down', isExpanded);
-                icon.classList.toggle('fa-chevron-up', !isExpanded);
-            }
-        }
-
-        const nutritionalData = {
-            labels: ['Rabbit', 'Chicken', 'Beef', 'Lamb'],
-            datasets: [{
-                label: 'Protein (g per 100g)', data: [21, 20, 18, 17],
-                backgroundColor: 'rgba(250, 198, 56, 0.7)', borderColor: 'rgba(250, 198, 56, 1)', borderWidth: 1
-            }, {
-                label: 'Fat (g per 100g)', data: [8, 12, 15, 20],
-                backgroundColor: 'rgba(244, 240, 230, 0.7)', borderColor: 'rgba(244, 240, 230, 1)', borderWidth: 1
-            }]
-        };
-
-        const costData = {
-            labels: ['Week 1', 'Week 4', 'Week 8', 'Week 12'],
-            datasets: [{
-                label: 'Cost: Homegrown Rabbit (R/kg)', data: [15, 12, 10, 9],
-                borderColor: 'rgba(250, 198, 56, 1)', backgroundColor: 'rgba(250, 198, 56, 0.2)', fill: true, tension: 0.1
-            }, {
-                label: 'Cost: Store-Bought Chicken (R/kg)', data: [70, 72, 70, 75],
-                borderColor: 'rgba(158, 135, 71, 1)', backgroundColor: '                rgba(158, 135, 71, 0.2)', fill: true, tension: 0.1
-            }]
-        };
-
-        function createCharts() {
-            const chartOptions = (titleText) => ({
-                responsive: true, maintainAspectRatio: false,
-                plugins: {
-                    legend: { labels: { color: 'var(--text-dark)', font: { family: "'Epilogue', sans-serif" } } },
-                    title: { display: true, text: titleText, color: 'var(--text-dark)', font: { family: "'Epilogue', sans-serif", size: 14 } }
-                },
-                scales: {
-                    y: { ticks: { color: 'var(--text-muted)' }, grid: { color: 'var(--border-color)' } },
-                    x: { ticks: { color: 'var(--text-muted)' }, grid: { display: false } }
+            function startQuiz(category) {
+                currentQuizQuestions = quizBank.filter(q => q.category === category).sort(() => 0.5 - Math.random()).slice(0, 3);
+                if (currentQuizQuestions.length === 0) {
+                    document.getElementById('quizArea').innerHTML = '<p class="text-center text-muted">No questions available.</p>';
+                    document.getElementById('quizArea').style.display = 'block';
+                    document.getElementById('quizCategorySelector').style.display = 'block';
+                    return;
                 }
-            });
-            const ntx = document.getElementById('nutritionalComparisonChart');
-            if (ntx) new Chart(ntx, { type: 'bar', data: nutritionalData, options: chartOptions('Meat Nutrition Facts (per 100g)') });
-            const ctx = document.getElementById('costComparisonChart');
-            if (ctx) new Chart(ctx, { type: 'line', data: costData, options: chartOptions('Cost Comparison (R/kg over time)') });
-        }
-
-        function runRabbitrySimulation() {
-            const outputDiv = document.getElementById('simulationOutput');
-            if (outputDiv) {
-                outputDiv.innerHTML = `<p class="text-base font-medium leading-normal">Simulation Results:</p><p class="text-sm text-muted p-4 bg-yellow-50 border border-yellow-200 rounded-md">Based on your inputs (e.g., 2 does, 1 buck), you could expect approximately <strong>X kits</strong> in 3 months, with first potential harvest around <strong>Y weeks</strong>. This is a simplified projection.</p>`;
+                currentQuestionIndex = 0;
+                userScore = 0;
+                userAnswers = [];
+                selectedAnswerForCurrentQuestion = null;
+                document.getElementById('quizArea').style.display = 'block';
+                document.getElementById('quizCategorySelector').style.display = 'none';
+                document.getElementById('quizCategoryTitle').innerText = `${category} Quiz`;
+                document.getElementById('submitQuizBtn').style.display = 'none';
+                document.getElementById('nextQuestionBtn').style.display = 'inline-flex';
+                document.getElementById('quizResultsArea').style.display = 'none';
+                displayQuizQuestion();
             }
-        }
 
-        const provinceBylawData = {
-            "GP": document.getElementById('gautengBylawContent')?.innerHTML || "<p class='text-sm text-muted'>Gauteng info placeholder.</p>",
-            "WC": document.getElementById('westernCapeBylawContent')?.innerHTML || "<p class='text-sm text-muted'>Western Cape info placeholder.</p>",
-            "EC": document.getElementById('easternCapeBylawContent')?.innerHTML || "<p class='text-sm text-muted'>Eastern Cape info placeholder.</p>",
-            "KZN": "<div class='content-card'><p class='text-base font-medium leading-normal'>KwaZulu-Natal</p><p class='text-sm text-muted'>Contact your local KZN municipality for specific bylaws.</p></div>",
-            "LP": "<div class='content-card'><p class='text-base font-medium leading-normal'>Limpopo</p><p class='text-sm text-muted'>Check with your local Limpopo municipality for regulations.</p></div>",
-            "MP": "<div class='content-card'><p class='text-base font-medium leading-normal'>Mpumalanga</p><p class='text-sm text-muted'>Consult your local Mpumalanga municipality.</p></div>",
-            "NW": "<div class='content-card'><p class='text-base font-medium leading-normal'>North West</p><p class='text-sm text-muted'>Contact your North West local municipality.</p></div>",
-            "FS": "<div class='content-card'><p class='text-base font-medium leading-normal'>Free State</p><p class='text-sm text-muted'>Check with your Free State local municipality.</p></div>",
-            "NC": "<div class='content-card'><p class='text-base font-medium leading-normal'>Northern Cape</p><p class='text-sm text-muted'>Consult your Northern Cape local municipality.</p></div>",
-        };
-
-        function showProvinceBylaws() {
-            const selector = document.getElementById('provinceSelector');
-            const detailsDiv = document.getElementById('provinceBylawDetails');
-            if (selector && detailsDiv) {
-                const selectedValue = selector.value;
-                if (selectedValue && provinceBylawData[selectedValue]) {
-                    detailsDiv.innerHTML = provinceBylawData[selectedValue];
-                    detailsDiv.style.display = 'block';
-                } else {
-                    detailsDiv.style.display = 'none';
-                    detailsDiv.innerHTML = '';
-                }
+            function displayQuizQuestion() {
+                const q = currentQuizQuestions[currentQuestionIndex];
+                const container = document.getElementById('quizQuestionContainer');
+                let optionsHTML = `<p class="text-lg font-semibold mb-4 text-center">${currentQuestionIndex + 1}. ${q.question}</p><div class="space-y-3">`;
+                q.options.forEach(opt => {
+                    optionsHTML += `<button class="quiz-option" onclick="selectQuizAnswer(this, '${opt}', '${q.answer}')">${opt}</button>`;
+                });
+                optionsHTML += `</div>`;
+                container.innerHTML = optionsHTML;
+                selectedAnswerForCurrentQuestion = null;
             }
-        }
 
-        const quizBank = [
-            { category: 'Rabbit Basics', question: "What is a male rabbit called?", options: ["Doe", "Buck", "Kit", "Warren"], answer: "Buck" },
-            { category: 'Rabbit Basics', question: "What is a female rabbit called?", options: ["Buck", "Doe", "Kit", "Sire"], answer: "Doe" },
-            { category: 'Rabbit Basics', question: "What is a baby rabbit called?", options: ["Kit", "Pup", "Joey", "Bun"], answer: "Kit" },
-            { category: 'Breeding & Care', question: "What is the average gestation period for a rabbit?", options: ["20-25 days", "28-35 days", "40-45 days", "50-60 days"], answer: "28-35 days" },
-            { category: 'Breeding & Care', question: "What is a nest box primarily used for?", options: ["Sleeping", "Eating", "Giving birth", "Playing"], answer: "Giving birth" },
-            { category: 'Compliance & Legal', question: "In Johannesburg, approximately how many adult rabbits can typically be kept without a permit?", options: ["Up to 5", "Up to 10", "Up to 20", "Unlimited"], answer: "Up to 5" },
-            { category: 'Harvest & Recipes', question: "At what age are meat rabbits typically harvested?", options: ["4-6 weeks", "8-12 weeks", "6-9 months", "1-2 years"], answer: "8-12 weeks" },
-            { category: 'Fun Facts', question: "Can rabbits swim?", options: ["Yes", "No"], answer: "Yes" },
-            { category: 'Fun Facts', question: "What is a group of rabbits called?", options: ["A Herd", "A Flock", "A Colony or Warren", "A Pack"], answer: "A Colony or Warren" }
-        ];
-
-        let currentQuizQuestions = [];
-        let currentQuestionIndex = 0;
-        let userScore = 0;
-        let selectedAnswerForCurrentQuestion = null;
-
-        function startQuiz(category) {
-            currentQuizQuestions = quizBank.filter(q => q.category === category).sort(() => 0.5 - Math.random()).slice(0, 3);
-            if (currentQuizQuestions.length === 0) {
-                const quizArea = document.getElementById('quizArea');
-                quizArea.innerHTML = '<p class="text-center text-muted">No questions available for this category yet.</p>';
-                quizArea.style.display = 'block';
-                document.getElementById('quizCategorySelector').style.display = 'block';
-                return;
+            function selectQuizAnswer(button, selected, correct) {
+                document.querySelectorAll('.quiz-option').forEach(btn => btn.classList.remove('selected'));
+                button.classList.add('selected');
+                selectedAnswerForCurrentQuestion = { selected: selected, correct: correct };
             }
-            currentQuestionIndex = 0;
-            userScore = 0;
-            selectedAnswerForCurrentQuestion = null;
-            document.getElementById('quizArea').style.display = 'block';
-            document.getElementById('quizCategorySelector').style.display = 'none';
-            document.getElementById('quizCategoryTitle').innerText = `${category} Quiz`;
-            document.getElementById('submitQuizBtn').style.display = 'none';
-            document.getElementById('nextQuestionBtn').style.display = 'inline-flex';
-            document.getElementById('quizResultsArea').style.display = 'none';
-            displayQuizQuestion();
-        }
 
-        function displayQuizQuestion() {
-            const q = currentQuizQuestions[currentQuestionIndex];
-            const container = document.getElementById('quizQuestionContainer');
-            let optionsHTML = `<p class="text-lg font-semibold mb-4 text-center">${currentQuestionIndex + 1}. ${q.question}</p><div class="space-y-3">`;
-            q.options.forEach(opt => {
-                optionsHTML += `<button class="quiz-option" onclick="selectQuizAnswer(this, '${opt}', '${q.answer}')">${opt}</button>`;
-            });
-            optionsHTML += `</div>`;
-            container.innerHTML = optionsHTML;
-            selectedAnswerForCurrentQuestion = null;
-        }
-
-        function selectQuizAnswer(button, selected, correct) {
-            document.querySelectorAll('.quiz-option').forEach(btn => btn.classList.remove('selected'));
-            button.classList.add('selected');
-            selectedAnswerForCurrentQuestion = { selected: selected, correct: correct };
-        }
-
-        function nextQuizQuestion() {
-            if (!selectedAnswerForCurrentQuestion) {
-                const outputDiv = document.getElementById('quizResultsArea');
-                if (outputDiv) {
+            function nextQuizQuestion() {
+                if (!selectedAnswerForCurrentQuestion) {
+                    const outputDiv = document.getElementById('quizResultsArea');
                     outputDiv.innerHTML = `<p class="text-sm text-red-600 p-2 bg-red-50 rounded text-center">Please select an answer.</p>`;
                     outputDiv.style.display = 'block';
                     setTimeout(() => { outputDiv.style.display = 'none'; }, 2000);
+                    return;
                 }
-                return;
-            }
-            if (selectedAnswerForCurrentQuestion.selected === selectedAnswerForCurrentQuestion.correct) {
-                userScore++;
-            }
-            currentQuestionIndex++;
-            if (currentQuestionIndex < currentQuizQuestions.length) {
-                displayQuizQuestion();
-            } else {
-                showQuizResults();
-            }
-        }
-
-        function showQuizResults() {
-            document.getElementById('quizQuestionContainer').innerHTML = '';
-            document.getElementById('nextQuestionBtn').style.display = 'none';
-            const resultsArea = document.getElementById('quizResultsArea');
-            resultsArea.innerHTML = `<p class="text-base font-medium leading-normal">Quiz Complete!</p><p class="text-sm">You scored ${userScore} out of ${currentQuizQuestions.length}.</p><div class="text-center"><button class="btn btn-primary" onclick="resetQuiz()">Try Another Quiz</button></div>`;
-            resultsArea.style.display = 'block';
-        }
-
-        function submitFullQuiz() {
-            showQuizResults();
-        }
-
-        function resetQuiz() {
-            document.getElementById('quizArea').style.display = 'none';
-            document.getElementById('quizCategorySelector').style.display = 'block';
-            document.getElementById('quizResultsArea').style.display = 'none';
-        }
-
-        function generateRuralYouthGuide() {
-            const role = document.getElementById('introducerRole').value;
-            const audience = document.getElementById('audienceGroup').value;
-            const outputDiv = document.getElementById('ruralYouthGuideOutput');
-            let content = `<p class="text-base font-medium leading-normal">Tailored Talking Points:</p>`;
-            content += `<p class="text-sm text-muted mb-1"><strong>Introducing as:</strong> ${role.replace(/_/g, ' ')}</p>`;
-            content += `<p class="text-sm text-muted mb-4"><strong>Talking to:</strong> ${audience.replace(/_/g, ' ')}</p>`;
-            content += `<div class="text-sm text-muted">`;
-
-            if (role === 'son_highschool' && audience === 'family_adults') {
-                content += `<p>Molweni Tata noMama. I've been learning about raising rabbits! It doesn't need much space, and they provide healthy meat.</p><ul class="list-disc pl-5 space-y-1 mt-2"><li><strong>Quick Food Source:</strong> Fresh meat faster than larger animals.</li><li><strong>Good for Our Garden:</strong> Manure helps grow vegetables.</li><li><strong>Family Project:</strong> We can all learn together.</li><li><strong>Extra Income:</strong> We could sell rabbits or meat.</li></ul><p class="mt-2">Can we look at this guide together?</p>`;
-            } else if (role === 'father' && audience === 'community_group') {
-                content += `<p>Sanibonani. Rabbit farming is a great opportunity for our youth and families in the Eastern Cape.</p><ul class="list-disc pl-5 space-y-1 mt-2"><li><strong>Affordable Protein:</strong> Cheaper than other livestock.</li><li><strong>Empowering Youth:</strong> Builds skills and income.</li><li><strong>Local Resources:</strong> Uses local plants.</li><li><strong>Food Security:</strong> Stronger families.</li></ul><p class="mt-2">Let's support our youth in this project!</p>`;
-            } else if (role === 'child_primary' && audience === 'family_adults') {
-                content += `<p>Mama, Tata, can we get bunnies? They give us food and help your vegetables!</p><ul class="list-disc pl-5 space-y-1 mt-2"><li>Cute and small.</li><li>Fun to care for.</li><li>Help our family!</li></ul>`;
-            } else {
-                content += "<p><em>Select a role and audience for tailored talking points.</em></p>";
-            }
-            content += `</div>`;
-            outputDiv.innerHTML = content;
-            outputDiv.style.display = 'block';
-        }
-
-        window.onload = () => {
-            navigateToSection(0);
-            createCharts();
-            setupCarousel('breedCarousel');
-            showProvinceBylaws();
-            const headerElement = document.querySelector('.app-header');
-            if (headerElement) {
-                const headerHeight = headerElement.offsetHeight;
-                document.querySelector('.main-content-wrapper').style.marginTop = `${headerHeight}px`;
-            }
-        };
-
-        window.onresize = () => {
-            if (currentCarouselSlides['breedCarousel']) {
-                const carouselData = currentCarouselSlides['breedCarousel'];
-                if (carouselData && carouselData.slides.length > 0) {
-                    const originalTrackDisplay = carouselData.track.style.display;
-                    carouselData.track.style.display = 'flex';
-                    carouselData.slideWidth = carouselData.slides[0].getBoundingClientRect().width;
-                    carouselData.track.style.display = originalTrackDisplay;
-                    showCarouselSlide('breedCarousel');
+                userAnswers.push({ ...selectedAnswerForCurrentQuestion, question: currentQuizQuestions[currentQuestionIndex].question, explanation: currentQuizQuestions[currentQuestionIndex].explanation });
+                if (selectedAnswerForCurrentQuestion.selected === selectedAnswerForCurrentQuestion.correct) {
+                    userScore++;
+                }
+                currentQuestionIndex++;
+                if (currentQuestionIndex < currentQuizQuestions.length) {
+                    displayQuizQuestion();
+                } else {
+                    showQuizResults();
                 }
             }
-            const navScrollable = document.querySelector('.spa-nav-tabs');
-            const activeButton = navButtons[currentSectionIndex];
-            if (activeButton && navScrollable) {
-                const scrollLeft = activeButton.offsetLeft - (navScrollable.offsetWidth / 2) + (activeButton.offsetWidth / 2);
-                navScrollable.scrollTo({ left: scrollLeft, behavior: 'auto' });
+
+            function showQuizResults() {
+                document.getElementById('quizQuestionContainer').innerHTML = '';
+                document.getElementById('nextQuestionBtn').style.display = 'none';
+                const resultsArea = document.getElementById('quizResultsArea');
+                let resultsHTML = `<p class="text-base font-medium leading-normal">Quiz Complete!</p><p class="text-sm">You scored ${userScore} out of ${currentQuizQuestions.length}.</p>`;
+                resultsHTML += `<div class="mt-4"><p class="text-base font-medium">Answers:</p><ul class="list-disc pl-5 space-y-2">`;
+                userAnswers.forEach((ans, idx) => {
+                    resultsHTML += `<li><strong>${idx + 1}. ${ans.question}</strong><br>Your Answer: ${ans.selected}<br>Correct Answer: ${ans.correct}<br>Explanation: ${ans.explanation}</li>`;
+                });
+                resultsHTML += `</ul></div><div class="text-center mt-4"><button class="btn btn-primary" onclick="resetQuiz()">Try Another Quiz</button></div>`;
+                resultsArea.innerHTML = resultsHTML;
+                resultsArea.style.display = 'block';
             }
-            const headerElement = document.querySelector('.app-header');
-            if (headerElement) {
-                const headerHeight = headerElement.offsetHeight;
-                document.querySelector('.main-content-wrapper').style.marginTop = `${headerHeight}px`;
+
+            function submitFullQuiz() { showQuizResults(); }
+
+            function resetQuiz() {
+                document.getElementById('quizArea').style.display = 'none';
+                document.getElementById('quizCategorySelector').style.display = 'block';
+                document.getElementById('quizResultsArea').style.display = 'none';
             }
-        };
-    </script>
-</body>
+
+            const learningFacts = {
+                feeding: [
+                    { text: "Hay is the cornerstone of a rabbit’s diet, promoting digestion.", img: "https://lh3.googleusercontent.com/aida-public/AB6AXuCxxzrWUhc29lizGKpempAg2bdOYwXQeKdJNqDgKxAtcmFE028fP8rGG7UF4KqFyqIK7PHpIvKsKZ8yhTBHl0B6QzY8rz3DKVUnlUwtngGtlI07RFQyj0Z2pebi4xal3Eu_-UNch5EFJZ47qxlIxEbhytTngIQ3miSv1ZMZrK2vQwPnzzbFmluPHW2" },
+                    { text: "Pellets (R150/25kg) provide balanced nutrition; feed 100g/day per adult.", img: null, link: "https://www.rspca.org.uk/adviceandwelfare/pets/rabbits/diet" },
+                    { text: "Fresh greens like kale enhance health but introduce gradually.", img: null }
+                ],
+                housing: [
+                    { text: "Hutches need ventilation and protection from weather.", img: "https://lh3.googleusercontent.com/aida-public/AB6AXuC1OWvQTa8g4z2S7kcCzZCk5jxz82PZgcNy1wZdaxlI4ejd0mlOhIZPg2FsQN-nzA3FMLavE7ol7UvImI6bfD0xCHw7oy1OWgsGSPECQqlaJDxW47b1FrAkxA9ERBCavPud40DDt91Dxn3NzECQMlGUOZD3JU0_PqQsOihnuR1Q-KKkdh-qVBR8i61mo" },
+                    { text: "Wire mesh floors (R50/m²) prevent sores with proper bedding.", img: null, link: "https://www.petmd.com/rabbit/care/evr_rb_rabbit_housing" }
+                ],
+                breeding: [
+                    { text: "Gestation lasts 28-35 days, producing 6-10 kits.", img: "https://lh3.googleusercontent.com/aida-public/AB6AXuBZjX-Vxb1eg0W8kXI91CP4Fjff9XybP1tqMSAikjlc335VbBPPf4HJggMO215x4ITARkev3DOap5p-hthcp7GdvslITSkdo4-5PfZS-YMoVMmUYBTTPiyyjO4xLpgwsfGZD6ICYwdFKCLiX2gKeLJ8ey6WX7NwoSyQi5N8jL-8tM4Z575EQF2YW7bW2" },
+                    { text: "Nest boxes (R200) are essential for kindling.", img: null, link: "https://www.rabbit.org/care/breeding.html" }
+                ]
+            };
+
+            let currentLearningTopic = null;
+            let currentFactIndex = 0;
+
+            function startLearningTopic(topic) {
+                currentLearningTopic = topic;
+                currentFactIndex = 0;
+                displayLearningFact();
+                document.getElementById('learn-content').classList.add('active');
+            }
+
+            function displayLearningFact() {
+                if (!currentLearningTopic) return;
+                const facts = learningFacts[currentLearningTopic];
+                if (!facts || currentFactIndex < 0 || currentFactIndex >= facts.length) return;
+                const fact = facts[currentFactIndex];
+                let html = `<p class="text-base">${fact.text}</p>`;
+                if (fact.img) html += `<img src="${fact.img}" alt="Fact Image" class="w-full h-40 object-cover rounded-md mt-2">`;
+                if (fact.link) html += `<p class="text-sm mt-2"><a href="${fact.link}" target="_blank" class="text-blue-600 hover:underline">Learn More</a></p>`;
+                document.getElementById('learnFactText').innerHTML = html;
+            }
+
+            function nextFact() {
+                if (currentLearningTopic && currentFactIndex < learningFacts[currentLearningTopic].length - 1) {
+                    currentFactIndex++;
+                    displayLearningFact();
+                }
+            }
+
+            function prevFact() {
+                if (currentLearningTopic && currentFactIndex > 0) {
+                    currentFactIndex--;
+                    displayLearningFact();
+                }
+            }
+
+            function generateRuralGuide() {
+                const role = document.getElementById('introducerRole').value;
+                const audience = document.getElementById('audienceGroup').value;
+                const outputDiv = document.getElementById('ruralGuideOutput');
+                let content = `<p class="text-base font-medium leading-normal">Talking Points:</p>`;
+                if (role === 'youth' && audience === 'family') {
+                    content += `<p>Molo family! Rabbit farming is affordable and provides food for us, especially in Eastern Cape.</p><ul class="list-disc pl-5"><li>Meat in 3 months.</li><li>Manure for gardens.</li><li>Can we try it?</li></ul>`;
+                } else if (role === 'father' && audience === 'community') {
+                    content += `<p>Sanibonani. Rabbits are perfect for Eastern Cape and KZN communities.</p><ul class="list-disc pl-5"><li>Low-cost protein.</li><li>Youth jobs.</li><li>Let’s start!</li></ul>`;
+                } else {
+                    content += `<p>Select role and audience for tailored points.</p>`;
+                }
+                outputDiv.innerHTML = content;
+                outputDiv.style.display = 'block';
+            }
+
+            window.onload = () => {
+                navigateToSection(0);
+                createCharts();
+                setupCarousel('breedCarousel');
+                showProvinceBylaws();
+                const headerElement = document.querySelector('.app-header');
+                if (headerElement) {
+                    document.querySelector('.main-content-wrapper').style.marginTop = `${headerElement.offsetHeight}px`;
+                }
+            };
+
+            window.onresize = () => {
+                if (currentCarouselSlides['breedCarousel']) {
+                    const carouselData = currentCarouselSlides['breedCarousel'];
+                    if (carouselData && carouselData.slides.length > 0) {
+                        const originalTrackDisplay = carouselData.track.style.display;
+                        carouselData.track.style.display = 'flex';
+                        carouselData.slideWidth = carouselData.slides[0].getBoundingClientRect().width;
+                        carouselData.track.style.display = originalTrackDisplay;
+                        showCarouselSlide('breedCarousel');
+                    }
+                }
+                const navScrollable = document.querySelector('.spa-nav-tabs');
+                const activeButton = navButtons[currentSectionIndex];
+                if (activeButton && navScrollable) {
+                    const scrollLeft = activeButton.offsetLeft - (navScrollable.offsetWidth / 2) + (activeButton.offsetWidth / 2);
+                    navScrollable.scrollTo({ left: scrollLeft, behavior: 'auto' });
+                }
+            };
+        </script>
+    </body>
 </html>
